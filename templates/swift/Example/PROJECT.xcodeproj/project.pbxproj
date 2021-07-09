@@ -77,18 +77,11 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		B62B9C4C2698A24A000A3609 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		B62B9C4D2698A281000A3609 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B62B9C552698A51D000A3609 /* Main */,
 				B62B9C502698A373000A3609 /* Home */,
-				B62B9C4C2698A24A000A3609 /* Main */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -99,6 +92,13 @@
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		B62B9C552698A51D000A3609 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
