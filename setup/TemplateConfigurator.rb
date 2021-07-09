@@ -95,10 +95,8 @@ module Pod
     def run_pod_install
       puts "\nRunning " + "pod install".magenta + " on your new library."
       puts ""
-
-      do
-        system "pod install"
-      end
+      
+      system "pod install"
 
       `git add .`
       `git commit -m "Initial commit"`
