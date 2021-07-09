@@ -13,8 +13,6 @@ target '${POD_NAME}_Example' do
   pod 'Then'
   pod 'SwifterSwift'
   pod 'Alamofire'
-  
-  pod '${POD_NAME}', :path => '../'
 
   target '${POD_NAME}_Tests' do
     inherit! :search_paths
