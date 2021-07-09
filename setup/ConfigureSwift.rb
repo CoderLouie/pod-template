@@ -20,7 +20,7 @@ module Pod
                 when :yes
                 configurator.set_test_framework "xctest", "swift", "swift"
                 when :no
-                `rm ./templates/swift/Example/Tests`
+                `rm -rf ./templates/swift/Example/Tests`
             end
             
             Pod::ProjectManipulator.new({
