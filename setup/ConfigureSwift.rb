@@ -14,14 +14,14 @@ module Pod
         def perform
              
             
-            test = configurator.ask_with_answers("Would you like to include a test target in your library", ["Yes", "No"]).to_sym
-            
-            case test
-                when :yes
-                configurator.set_test_framework "xctest", "swift", "swift"
-                when :no
-                `rm -rf ./templates/swift/Example/Tests`
-            end
+#            test = configurator.ask_with_answers("Would you like to include a test target in your library", ["Yes", "No"]).to_sym
+#
+#            case test
+#                when :yes
+#                configurator.set_test_framework "xctest", "swift", "swift"
+#                when :no
+#                `rm -rf ./templates/swift/Example/Tests`
+#            end
             
             Pod::ProjectManipulator.new({
                                         :configurator => @configurator,
