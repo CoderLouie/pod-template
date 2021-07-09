@@ -12,18 +12,15 @@ module Pod
         end
         
         def perform
-            
-#            configurator.add_pod_to_podfile "Alamofire"
-#            configurator.add_pod_to_podfile "SwifterSwift"
-#            configurator.add_pod_to_podfile "Then"
-#            configurator.add_pod_to_podfile "SnapKit"
-#            configurator.add_pod_to_podfile "Reusable"
-#            configurator.add_pod_to_podfile "SwiftyUserDefaults"
+             
             
             test = configurator.ask_with_answers("Would you like to include a test target in your library", ["Yes", "No"]).to_sym
             
-            if test == :yes
+            case test
+                when :yes
                 configurator.set_test_framework "xctest", "swift", "swift"
+                when :no
+                `rm ./templates/swift/Example/Tests`
             end
             
             Pod::ProjectManipulator.new({
@@ -39,8 +36,6 @@ module Pod
                                         
                                         `mv ./templates/swift/Example/* ./`
                                         
-                                        # remove podspec for osx
-                                        `rm ./NAME-osx.podspec`
         end
     end
     
