@@ -13,14 +13,12 @@ module Pod
         
         def perform
             
-            do
-                configurator.add_pod_to_podfile "Alamofire'
-                configurator.add_pod_to_podfile "SwifterSwift'
-                configurator.add_pod_to_podfile "Then'
-                configurator.add_pod_to_podfile "SnapKit'
-                configurator.add_pod_to_podfile "Reusable'
-                configurator.add_pod_to_podfile "SwiftyUserDefaults'
-            end
+#            configurator.add_pod_to_podfile "Alamofire"
+#            configurator.add_pod_to_podfile "SwifterSwift"
+#            configurator.add_pod_to_podfile "Then"
+#            configurator.add_pod_to_podfile "SnapKit"
+#            configurator.add_pod_to_podfile "Reusable"
+#            configurator.add_pod_to_podfile "SwiftyUserDefaults"
             
             test = configurator.ask_with_answers("Would you like to include a test target in your library", ["Yes", "No"]).to_sym
             

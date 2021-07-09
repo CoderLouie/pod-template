@@ -1,8 +1,19 @@
+
+platform :ios, '10.0'
+
+inhibit_all_warnings!
+
 use_frameworks!
 
-platform :ios, '9.0'
-
 target '${POD_NAME}_Example' do
+
+  pod 'SwiftyUserDefaults'
+  pod 'Reusable'
+  pod 'SnapKit'
+  pod 'Then'
+  pod 'SwifterSwift'
+  pod 'Alamofire'
+  
   pod '${POD_NAME}', :path => '../'
 
   target '${POD_NAME}_Tests' do
@@ -11,3 +22,7 @@ target '${POD_NAME}_Example' do
     ${INCLUDED_PODS}
   end
 end
+
+
+
+ 
