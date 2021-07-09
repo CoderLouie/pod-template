@@ -2,7 +2,8 @@
 //  ViewController.swift
 //  PROJECT
 //
-//  Created by 李阳 on 2021/7/9.
+//  Created by PROJECT_OWNER on TODAYS_DATE.
+//  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
 //
 
 import UIKit
@@ -11,10 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = .white
-    }
-
+    } 
 
 }
 
