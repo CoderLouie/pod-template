@@ -76,7 +76,7 @@ module Pod
                 ConfigureSwift.perform(configurator: self)
                 
                 when :objc
-                ConfigureIOS.perform(configurator: self)
+                ConfigureOC.perform(configurator: self)
             end
             
             replace_variables_in_files

@@ -47,7 +47,11 @@ module Pod
             # rename xcproject
             File.rename(project_folder + "/PROJECT.xcodeproj", project_folder + "/" +  @configurator.pod_name + ".xcodeproj")
             
-            File.rename(project_folder + "/PROJECT/Other/PROJECT-Bridging-Header.h", project_folder + "/PROJECT/Other/" +  @configurator.pod_name + "-Bridging-Header.h")
+            bridgePath = project_folder + "/PROJECT/Other/PROJECT-Bridging-Header.h"
+            if File.exists? bridgePath
+                File.rename(bridgePath, project_folder + "/PROJECT/Other/" +  @configurator.pod_name + "-Bridging-Header.h")
+            end
+#            File.rename(project_folder + "/PROJECT/Other/PROJECT-Bridging-Header.h", project_folder + "/PROJECT/Other/" +  @configurator.pod_name + "-Bridging-Header.h")
             
             unless @remove_demo_target
                 
