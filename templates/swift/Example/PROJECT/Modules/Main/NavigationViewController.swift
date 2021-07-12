@@ -3,7 +3,7 @@
 //  PROJECT
 //
 //  Created by 李阳 on 2021/7/9.
-//  Copyright © 2021 CocoaPods. All rights reserved.
+//  Copyright © 2021 gomo. All rights reserved.
 //
 
 import UIKit

@@ -3,7 +3,7 @@
 //  PROJECT
 //
 //  Created by PROJECT_OWNER on TODAYS_DATE.
-//  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
+//  Copyright (c) TODAYS_YEAR gomo. All rights reserved.
 //
 
 import UIKit
