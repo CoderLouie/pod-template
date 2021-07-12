@@ -31,7 +31,7 @@
 		B6CFDBA5269C1FB2004DA6A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CFDBA7269C1FB2004DA6A9 /* InfoPlist.strings */; };
 		B6CFDBA9269C1FC0004DA6A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CFDBAB269C1FC0004DA6A9 /* Localizable.strings */; };
 		B6CFDBAE269C21AA004DA6A9 /* Lan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDBAD269C21AA004DA6A9 /* Lan.swift */; };
-		B6CFDC36269C2DC0004DA6A9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDC35269C2DC0004DA6A9 /* ProfileViewController.swift */; };
+		B6CFDC3A269C3005004DA6A9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDC39269C3005004DA6A9 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +65,7 @@
 		B6CFDBAA269C1FC0004DA6A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B6CFDBAC269C1FC3004DA6A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B6CFDBAD269C21AA004DA6A9 /* Lan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lan.swift; sourceTree = "<group>"; };
-		B6CFDC35269C2DC0004DA6A9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B6CFDC39269C3005004DA6A9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +130,9 @@
 		B62B9C4D2698A281000A3609 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				B6CFDC34269C2DC0004DA6A9 /* Profile */,
 				B62B9C552698A51D000A3609 /* Main */,
 				B62B9C502698A373000A3609 /* Home */,
+				B6CFDC38269C2FDF004DA6A9 /* Profile */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -226,10 +226,10 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		B6CFDC34269C2DC0004DA6A9 /* Profile */ = {
+		B6CFDC38269C2FDF004DA6A9 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				B6CFDC35269C2DC0004DA6A9 /* ProfileViewController.swift */,
+				B6CFDC39269C3005004DA6A9 /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -326,7 +326,7 @@
 				B6CFDB80269C1502004DA6A9 /* UIImage+Add.swift in Sources */,
 				B6CFDB93269C1B47004DA6A9 /* ObjectUnicode.swift in Sources */,
 				B6CFDB9C269C1C88004DA6A9 /* BaseView.swift in Sources */,
-				B6CFDC36269C2DC0004DA6A9 /* ProfileViewController.swift in Sources */,
+				B6CFDC3A269C3005004DA6A9 /* ProfileViewController.swift in Sources */,
 				B6CFDB86269C1502004DA6A9 /* Date+Add.swift in Sources */,
 				B6CFDB87269C1502004DA6A9 /* DispatchQueue+Add.swift in Sources */,
 			);
@@ -461,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = NW3KV7KHV6;
 				INFOPLIST_FILE = PROJECT/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -481,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = NW3KV7KHV6;
 				INFOPLIST_FILE = PROJECT/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
