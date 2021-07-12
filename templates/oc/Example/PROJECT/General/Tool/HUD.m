@@ -190,7 +190,7 @@ marginFromScrrenBottomEdge:(CGFloat)margin
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
      
     [sheet addAction:cancel];
-    UIViewController *vc = [UIApplication sharedApplication].delegate.window.mh_currentViewController;
+    UIViewController *vc = [UIApplication sharedApplication].delegate.window.ly_currentViewController;
     [vc presentViewController:sheet animated:YES completion:nil];
 }
 

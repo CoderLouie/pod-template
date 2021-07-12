@@ -29,7 +29,7 @@
 - (void)setupViews {}
 
 - (void)dealloc {
-    NSLogFunc;
+    CPDLogFunc;
 }
 
 /*

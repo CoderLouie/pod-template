@@ -17,10 +17,10 @@
 #import "UIViewController+IVAdd.h"
 
 #ifdef DEBUG
-#define GOLog(...) NSLog(__VA_ARGS__)
+#define GPDLog(...) NSLog(__VA_ARGS__)
 #else
-#define GOLog(...)
+#define GPDLog(...)
 #endif
-#define GOLogFunc GOLog(@"%s", __func__)
+#define CPDLogFunc GPDLog(@"%s", __func__)
 
 #endif /* MyAnyChat_pch */
