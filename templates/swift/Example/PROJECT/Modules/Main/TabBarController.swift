@@ -31,7 +31,7 @@ class TabBarController: UITabBarController {
         let font = UIFont.systemFont(ofSize: 11)
         vc.tabBarItem.setTitleTextAttributes([
             .font: font,
-                                                .foregroundColor: UIColor(gray: 109)], for: .normal)
+            .foregroundColor: UIColor(gray: 105)], for: .normal)
         vc.tabBarItem.setTitleTextAttributes([
             .font: font,
             .foregroundColor: UIColor(gray: 105)], for: .selected)

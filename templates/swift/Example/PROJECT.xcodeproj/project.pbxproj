@@ -29,6 +29,9 @@
 		B6CFDB9C269C1C88004DA6A9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB9B269C1C88004DA6A9 /* BaseView.swift */; };
 		B6CFDB9E269C1C8F004DA6A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB9D269C1C8F004DA6A9 /* BaseViewController.swift */; };
 		B6CFDBA0269C1CEB004DA6A9 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB9F269C1CEB004DA6A9 /* HUD.swift */; };
+		B6CFDBA5269C1FB2004DA6A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CFDBA7269C1FB2004DA6A9 /* InfoPlist.strings */; };
+		B6CFDBA9269C1FC0004DA6A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CFDBAB269C1FC0004DA6A9 /* Localizable.strings */; };
+		B6CFDBAE269C21AA004DA6A9 /* Lan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDBAD269C21AA004DA6A9 /* Lan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,11 @@
 		B6CFDB9B269C1C88004DA6A9 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		B6CFDB9D269C1C8F004DA6A9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B6CFDB9F269C1CEB004DA6A9 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		B6CFDBA6269C1FB2004DA6A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6CFDBA8269C1FB6004DA6A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		B6CFDBAA269C1FC0004DA6A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B6CFDBAC269C1FC3004DA6A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B6CFDBAD269C21AA004DA6A9 /* Lan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,8 @@
 			children = (
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				B62B9C4E2698A2C0000A3609 /* Launch Screen.storyboard */,
+				B6CFDBA7269C1FB2004DA6A9 /* InfoPlist.strings */,
+				B6CFDBAB269C1FC0004DA6A9 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -196,6 +206,7 @@
 		B6CFDB8F269C1B3E004DA6A9 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				B6CFDBAD269C21AA004DA6A9 /* Lan.swift */,
 				B6CFDB9F269C1CEB004DA6A9 /* HUD.swift */,
 				B6CFDB95269C1B5E004DA6A9 /* SwiftyFitsize.h */,
 				B6CFDB94269C1B5E004DA6A9 /* SwiftyFitsize.swift */,
@@ -261,12 +272,12 @@
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "PROJECT" */;
 			compatibilityVersion = "Xcode 10.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
@@ -284,6 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B62B9C4F2698A2C0000A3609 /* Launch Screen.storyboard in Resources */,
+				B6CFDBA9269C1FC0004DA6A9 /* Localizable.strings in Resources */,
+				B6CFDBA5269C1FB2004DA6A9 /* InfoPlist.strings in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +311,7 @@
 				B6CFDB83269C1502004DA6A9 /* UIView+Add.swift in Sources */,
 				B6CFDBA0269C1CEB004DA6A9 /* HUD.swift in Sources */,
 				B6CFDB85269C1502004DA6A9 /* Value+Add.swift in Sources */,
+				B6CFDBAE269C21AA004DA6A9 /* Lan.swift in Sources */,
 				B6CFDB96269C1B5E004DA6A9 /* SwiftyFitsize.swift in Sources */,
 				B62B9C572698A631000A3609 /* NavigationViewController.swift in Sources */,
 				B6CFDB9E269C1C8F004DA6A9 /* BaseViewController.swift in Sources */,
@@ -319,6 +333,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6CFDBA7269C1FB2004DA6A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6CFDBA6269C1FB2004DA6A9 /* en */,
+				B6CFDBA8269C1FB6004DA6A9 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B6CFDBAB269C1FC0004DA6A9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6CFDBAA269C1FC0004DA6A9 /* en */,
+				B6CFDBAC269C1FC3004DA6A9 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		607FACED1AFB9204008FA782 /* Debug */ = {

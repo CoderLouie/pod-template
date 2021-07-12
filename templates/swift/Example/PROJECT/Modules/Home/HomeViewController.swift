@@ -8,13 +8,15 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        view.backgroundColor = .white
-    } 
+    override func setupViews() {
+        super.setupViews()
+        
+        let lbl = UILabel(frame: CGRect(x: 50, y: 100, width: 100, height: 20))
+        lbl.localText = Lan.Home.burst
+        view.addSubview(lbl)
+    }
 
 }
 
