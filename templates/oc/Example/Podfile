@@ -11,5 +11,6 @@ target '${POD_NAME}' do
   pod 'YYKit'
   pod 'SDWebImage' 
   pod 'Masonry' 
+  pod 'SVProgressHUD'
 
 end 
