@@ -2,29 +2,45 @@
 //  NavigationViewController.swift
 //  PROJECT
 //
-//  Created by 李阳 on 2021/7/9.
-//  Copyright © 2021 gomo. All rights reserved.
+//  Created by USER_NAME on TODAYS_DATE.
+//  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
 //
 
 import UIKit
 
-class NavigationViewController: UINavigationController {
+class NavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.delegate = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func pushViewController(_ vc: UIViewController, animated: Bool) {
+        defer { super.pushViewController(vc, animated: animated) }
+        guard viewControllers.count > 0 else { return }
+        vc.hidesBottomBarWhenPushed = true
+        
+        let backBtn = UIButton(type: .custom)
+        backBtn.setImage(UIImage(named: "navigationbar_back_withtext"), for: .normal)
+        backBtn.setImage(UIImage(named: "navigationbar_back_withtext_highlighted"), for: .highlighted)
+        backBtn.setTitle(viewControllers.last?.title, for: .normal)
+        backBtn.sizeToFit()
+        backBtn.addTarget(vc, action: #selector(backBarButtonItemClicked(sender:)), for: .touchUpInside)
     }
-    */
 
 }
+
+
+extension NavigationController: UINavigationControllerDelegate {
+    
+}
+
+
+extension UIViewController {
+    @objc func backBarButtonItemClicked(sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+}
+

@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  PROJECT
 //
-//  Created by PROJECT_OWNER on TODAYS_DATE.
-//  Copyright (c) TODAYS_YEAR gomo. All rights reserved.
+//  Created by USER_NAME on TODAYS_DATE.
+//  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
