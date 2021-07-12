@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* CPDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* CPDAppDelegate.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		B6E2E5FF269C3796003CCAB1 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2E5FE269C3796003CCAB1 /* Constant.m */; };
 		B6E2E608269C37CC003CCAB1 /* NetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2E600269C37CB003CCAB1 /* NetworkTool.m */; };
@@ -32,6 +31,7 @@
 		B6E2E6C8269C3EA7003CCAB1 /* CPDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2E6C7269C3EA7003CCAB1 /* CPDHomeViewController.m */; };
 		B6E2E6CB269C3EB9003CCAB1 /* CPDProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2E6CA269C3EB9003CCAB1 /* CPDProfileViewController.m */; };
 		B6E2E6CF269C40FB003CCAB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6E2E6D1269C40FB003CCAB1 /* Localizable.strings */; };
+		B6E2E813269C4D9C003CCAB1 /* CPDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2E812269C4D9C003CCAB1 /* CPDAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +40,6 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* PROJECT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PROJECT-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* CPDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* CPDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B6E2E5FD269C3796003CCAB1 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		B6E2E5FE269C3796003CCAB1 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
@@ -86,6 +84,8 @@
 		B6E2E6CC269C4084003CCAB1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		B6E2E6D0269C40FB003CCAB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B6E2E6D2269C40FE003CCAB1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B6E2E811269C4D9C003CCAB1 /* CPDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDAppDelegate.h; sourceTree = "<group>"; };
+		B6E2E812269C4D9C003CCAB1 /* CPDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,12 +126,12 @@
 		6003F593195388D20070C39A /* PROJECT */ = {
 			isa = PBXGroup;
 			children = (
+				B6E2E811269C4D9C003CCAB1 /* CPDAppDelegate.h */,
+				B6E2E812269C4D9C003CCAB1 /* CPDAppDelegate.m */,
 				B6E2E6DC269C43EA003CCAB1 /* Modules */,
 				B6E2E6DB269C43D5003CCAB1 /* Other */,
 				B6E2E6DA269C43B8003CCAB1 /* Resources */,
 				B6E2E6D4269C4315003CCAB1 /* General */,
-				6003F59C195388D20070C39A /* CPDAppDelegate.h */,
-				6003F59D195388D20070C39A /* CPDAppDelegate.m */,
 			);
 			path = PROJECT;
 			sourceTree = "<group>";
@@ -364,10 +364,10 @@
 				B6E2E622269C3824003CCAB1 /* NSArray+LYAdd.m in Sources */,
 				B6E2E625269C3824003CCAB1 /* UINavigationController+LYAdd.m in Sources */,
 				B6E2E608269C37CC003CCAB1 /* NetworkTool.m in Sources */,
-				6003F59E195388D20070C39A /* CPDAppDelegate.m in Sources */,
 				B6E2E609269C37CC003CCAB1 /* ViewBuilder.m in Sources */,
 				B6E2E624269C3824003CCAB1 /* UICollectionView+LYAdd.m in Sources */,
 				B6E2E60B269C37CC003CCAB1 /* FileTool.m in Sources */,
+				B6E2E813269C4D9C003CCAB1 /* CPDAppDelegate.m in Sources */,
 				B6E2E627269C3824003CCAB1 /* UITableView+LYAdd.m in Sources */,
 				B6E2E628269C3824003CCAB1 /* UIWindow+LYAdd.m in Sources */,
 				B6E2E626269C3824003CCAB1 /* UIViewController+IVAdd.m in Sources */,

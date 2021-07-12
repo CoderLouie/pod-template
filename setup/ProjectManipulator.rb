@@ -57,8 +57,30 @@ module Pod
             if File.exists? before
                 after = project_folder + "/PROJECT/Other/" +  @configurator.pod_name + "-Prefix.pch"
                 File.rename before, after
-            end 
+            end
             
+            ["CPDAppDelegate.h", "CPDAppDelegate.m"].each do |file|
+                before = project_folder + "/PROJECT/" + file
+                next unless File.exists? before
+                
+                after = project_folder + "/PROJECT/" + file.gsub("CPD", prefix)
+                File.rename before, after
+            end
+            
+            ["CPDHomeViewController.h", "CPDHomeViewController.m"].each do |file|
+                before = project_folder + "/PROJECT/Modules/Home/" + file
+                next unless File.exists? before
+                
+                after = project_folder + "/PROJECT/Modules/Home/" + file.gsub("CPD", prefix)
+                File.rename before, after
+            end
+            ["CPDProfileViewController.h", "CPDProfileViewController.m"].each do |file|
+                before = project_folder + "/PROJECT/Modules/Profile/" + file
+                next unless File.exists? before
+                
+                after = project_folder + "/PROJECT/Modules/Profile/" + file.gsub("CPD", prefix)
+                File.rename before, after
+            end
         end
         
         def rename_project_folder

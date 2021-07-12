@@ -12,8 +12,8 @@
 
 #import "NavigationController.h"
 
-#import "HomeViewController.h"
-#import "ProfileViewController.h"
+#import "CPDHomeViewController.h"
+#import "CPDProfileViewController.h"
 
 @implementation UIViewController (TabBarControllerAdded)
 
@@ -37,8 +37,8 @@
     // Do any additional setup after loading the view.
     
     self.delegate = self;
-    [self addChildVCWithClass:[HomeViewController class] iconName:@"tabbar_home" title:@"微博"];
-    [self addChildVCWithClass:[ProfileViewController class] iconName:@"tabbar_profile" title:@"我"];
+    [self addChildVCWithClass:[CPDHomeViewController class] iconName:@"tabbar_home" title:@"微博"];
+    [self addChildVCWithClass:[CPDProfileViewController class] iconName:@"tabbar_profile" title:@"我"];
 }
 
 

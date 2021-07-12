@@ -12,9 +12,7 @@
 #import <Masonry/Masonry.h>
 #import <YYKit/YYKit.h>
 #import "Constant.h"
-#import "HUD.h"
-
-#import "HMLog.h"
+#import "HUD.h" 
 
 #import "UIViewController+IVAdd.h"
 
