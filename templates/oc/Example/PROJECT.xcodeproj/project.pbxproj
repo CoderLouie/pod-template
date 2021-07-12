@@ -32,6 +32,7 @@
 		B6E2E6CB269C3EB9003CCAB1 /* CPDProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2E6CA269C3EB9003CCAB1 /* CPDProfileViewController.m */; };
 		B6E2E6CF269C40FB003CCAB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6E2E6D1269C40FB003CCAB1 /* Localizable.strings */; };
 		B6E2E813269C4D9C003CCAB1 /* CPDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2E812269C4D9C003CCAB1 /* CPDAppDelegate.m */; };
+		B6E2E817269C530A003CCAB1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E2E816269C530A003CCAB1 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		B6E2E6D2269C40FE003CCAB1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B6E2E811269C4D9C003CCAB1 /* CPDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDAppDelegate.h; sourceTree = "<group>"; };
 		B6E2E812269C4D9C003CCAB1 /* CPDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDAppDelegate.m; sourceTree = "<group>"; };
+		B6E2E816269C530A003CCAB1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				B6E2E6D1269C40FB003CCAB1 /* Localizable.strings */,
+				B6E2E816269C530A003CCAB1 /* Launch Screen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			files = (
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				B6E2E6CF269C40FB003CCAB1 /* Localizable.strings in Resources */,
+				B6E2E817269C530A003CCAB1 /* Launch Screen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
