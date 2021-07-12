@@ -47,23 +47,17 @@ module Pod
             # rename xcproject
             File.rename(project_folder + "/PROJECT.xcodeproj", project_folder + "/" +  @configurator.pod_name + ".xcodeproj")
             
-            bridgePath = project_folder + "/PROJECT/Other/PROJECT-Bridging-Header.h"
-            if File.exists? bridgePath
-                File.rename(bridgePath, project_folder + "/PROJECT/Other/" +  @configurator.pod_name + "-Bridging-Header.h")
+            before = project_folder + "/PROJECT/Other/PROJECT-Bridging-Header.h"
+            if File.exists? before
+                after = project_folder + "/PROJECT/Other/" +  @configurator.pod_name + "-Bridging-Header.h"
+                File.rename before, after
             end
-#            File.rename(project_folder + "/PROJECT/Other/PROJECT-Bridging-Header.h", project_folder + "/PROJECT/Other/" +  @configurator.pod_name + "-Bridging-Header.h")
             
-            unless @remove_demo_target
-                
-                # rename project related files
-                ["PROJECT-Info.plist", "PROJECT-Prefix.pch", "PROJECT.entitlements"].each do |file|
-                    before = project_folder + "/PROJECT/" + file
-                    next unless File.exists? before
-                    
-                    after = project_folder + "/PROJECT/" + file.gsub("PROJECT", @configurator.pod_name)
-                    File.rename before, after
-                end
-            end
+            before = project_folder + "/PROJECT/Other/PROJECT-Prefix.pch"
+            if File.exists? before
+                after = project_folder + "/PROJECT/Other/" +  @configurator.pod_name + "-Prefix.pch"
+                File.rename before, after
+            end 
             
         end
         

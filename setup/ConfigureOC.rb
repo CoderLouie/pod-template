@@ -27,7 +27,7 @@ module Pod
             
             Pod::ProjectManipulator.new({
                                         :configurator => @configurator,
-                                        :xcodeproj_path => "templates/ios/Example/PROJECT.xcodeproj",
+                                        :xcodeproj_path => "templates/oc/Example/PROJECT.xcodeproj",
                                         :platform => :ios,
                                         :remove_demo_project => false,
                                         :prefix => prefix
