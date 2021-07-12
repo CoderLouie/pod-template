@@ -37,7 +37,7 @@
     // Do any additional setup after loading the view.
     
     self.delegate = self;
-    [self addChildVCWithClass:[CPDHomeViewController class] iconName:@"tabbar_home" title:@"微博"];
+    [self addChildVCWithClass:[CPDHomeViewController class] iconName:@"tabbar_home" title:@"首页"];
     [self addChildVCWithClass:[CPDProfileViewController class] iconName:@"tabbar_profile" title:@"我"];
 }
 
