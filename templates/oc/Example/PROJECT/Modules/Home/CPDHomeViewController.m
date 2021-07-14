@@ -22,6 +22,14 @@
     [self.view addSubview:label];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+#if DEVELOPMENT
+    NSLog(@"DEVELOPMENT");
+#else
+    NSLog(@"APPSTORE");
+#endif
+}
+
 /*
 #pragma mark - Navigation
 
