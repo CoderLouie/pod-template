@@ -7,19 +7,18 @@
 //
 
 import Foundation
+ 
 
-fileprivate extension Date {
+public enum Console {
     static let logFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm:ss.SSSZZZ"
         return formatter
     }()
-    var logString: String {
-        return Date.logFormatter.string(from: self)
+    static var timeString: String {
+        return Self.logFormatter.string(from: Date())
     }
-}
-
-public enum Console {
+    
     static func log(_ items: Any...,
                   separator: String = " ",
                  terminator: String = "\n",
@@ -27,7 +26,7 @@ public enum Console {
                        line: Int = #line,
                          fn: String = #function) {
         #if DEBUG
-        var prefix = "\(Date().logString) \(file.lastPathComponent) \(line) \(fn)"
+        var prefix = "\(timeString) \(file.lastPathComponent) \(line) \(fn)"
         if prefix.hasSuffix("()") { prefix = String(prefix.dropLast(2)) }
         prefix.append(":")
         let content = items.map { String(describing: $0) }.joined(separator: separator)
@@ -38,7 +37,7 @@ public enum Console {
                         line: Int = #line,
                         fn: String = #function) {
         #if DEBUG
-        var prefix = "\(Date().logString) \(file.lastPathComponent) \(line) \(fn)"
+        var prefix = "\(timeString) \(file.lastPathComponent) \(line) \(fn)"
         if prefix.hasSuffix("()") { prefix = String(prefix.dropLast(2)) }
         print(prefix)
         #endif
@@ -48,9 +47,14 @@ public enum Console {
                   separator: String = " ",
                  terminator: String = "\n") {
         #if DEBUG
-        let prefix = "\(Date().logString)"
+        let prefix = "\(timeString)"
         let content = items.map { String(describing: $0) }.joined(separator: separator)
         print(prefix, content, terminator: terminator)
         #endif
+    }
+    
+    // YYKitMacro
+    static func benchmark(_ work: @escaping () -> Void, completion: @escaping (Double) -> Void) {
+        OCBenchmark(work, completion) 
     }
 }

@@ -18,5 +18,30 @@ class HomeViewController: BaseViewController {
         view.addSubview(lbl)
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        Console.log("begin")
+        Console.benchmark {
+            for _ in 0..<1000 {
+                
+            }
+        } completion: {
+            Console.log("end, use \($0)")
+        }
+
+//        present { alert in
+//            alert.title = "提示"
+//            alert.message = "你确定要这么做吗？"
+//            alert.addAction(title: "确定", style: .destructive) {
+//                print($0.title!)
+//            }
+//            alert.addAction(title: "取消", style: .cancel) {
+//                print($0.title!)
+//            }
+//            alert.addAction(title: "默认", style: .default) {
+//                print($0.title!)
+//            }
+//        }
+
+    }
 }
 

@@ -10,6 +10,7 @@
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* HomeViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
+		B610EA4C269E8AC600D91E7D /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = B610EA4B269E8AC600D91E7D /* Constant.m */; };
 		B62B9C4F2698A2C0000A3609 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62B9C4E2698A2C0000A3609 /* Launch Screen.storyboard */; };
 		B62B9C572698A631000A3609 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B9C562698A631000A3609 /* NavigationViewController.swift */; };
 		B6CFDB73269C1454004DA6A9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB72269C1454004DA6A9 /* TabBarController.swift */; };
@@ -32,6 +33,7 @@
 		B6CFDBA9269C1FC0004DA6A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CFDBAB269C1FC0004DA6A9 /* Localizable.strings */; };
 		B6CFDBAE269C21AA004DA6A9 /* Lan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDBAD269C21AA004DA6A9 /* Lan.swift */; };
 		B6CFDC3A269C3005004DA6A9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDC39269C3005004DA6A9 /* ProfileViewController.swift */; };
+		B6E46AAF269D9F3100346FC6 /* String+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E46AAE269D9F3100346FC6 /* String+Add.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B610EA4A269E8AC600D91E7D /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		B610EA4B269E8AC600D91E7D /* Constant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
 		B62B9C4E2698A2C0000A3609 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B62B9C562698A631000A3609 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		B6CFDB72269C1454004DA6A9 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 		B6CFDBAC269C1FC3004DA6A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B6CFDBAD269C21AA004DA6A9 /* Lan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lan.swift; sourceTree = "<group>"; };
 		B6CFDC39269C3005004DA6A9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B6E46AAE269D9F3100346FC6 /* String+Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Add.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +196,7 @@
 				B6CFDB7D269C1502004DA6A9 /* Value+Add.swift */,
 				B6CFDB7E269C1502004DA6A9 /* Date+Add.swift */,
 				B6CFDB7F269C1502004DA6A9 /* DispatchQueue+Add.swift */,
+				B6E46AAE269D9F3100346FC6 /* String+Add.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -205,6 +211,8 @@
 				B6CFDB90269C1B47004DA6A9 /* Console.swift */,
 				B6CFDB91269C1B47004DA6A9 /* ObjectUnicode.swift */,
 				B6CFDB97269C1B72004DA6A9 /* LocalizedStringConvertible.swift */,
+				B610EA4A269E8AC600D91E7D /* Constant.h */,
+				B610EA4B269E8AC600D91E7D /* Constant.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -317,6 +325,7 @@
 				B6CFDB9E269C1C8F004DA6A9 /* BaseViewController.swift in Sources */,
 				B6CFDB92269C1B47004DA6A9 /* Console.swift in Sources */,
 				B6CFDB84269C1502004DA6A9 /* UIViewController+Add.swift in Sources */,
+				B610EA4C269E8AC600D91E7D /* Constant.m in Sources */,
 				B6CFDB73269C1454004DA6A9 /* TabBarController.swift in Sources */,
 				B6CFDB82269C1502004DA6A9 /* UIColor+Add.swift in Sources */,
 				607FACD81AFB9204008FA782 /* HomeViewController.swift in Sources */,
@@ -324,6 +333,7 @@
 				B6CFDB98269C1B72004DA6A9 /* LocalizedStringConvertible.swift in Sources */,
 				B6CFDB81269C1502004DA6A9 /* UITabBarItem+Add.swift in Sources */,
 				B6CFDB80269C1502004DA6A9 /* UIImage+Add.swift in Sources */,
+				B6E46AAF269D9F3100346FC6 /* String+Add.swift in Sources */,
 				B6CFDB93269C1B47004DA6A9 /* ObjectUnicode.swift in Sources */,
 				B6CFDB9C269C1C88004DA6A9 /* BaseView.swift in Sources */,
 				B6CFDC3A269C3005004DA6A9 /* ProfileViewController.swift in Sources */,
@@ -471,6 +481,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gomo.swiftdemo.PROJECT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "PROJECT/Other/PROJECT-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
