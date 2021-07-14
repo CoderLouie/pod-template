@@ -42,7 +42,8 @@ module Pod
         def rename_files
             # shared schemes have project specific names
             scheme_path = project_folder + "/PROJECT.xcodeproj/xcshareddata/xcschemes/"
-            File.rename(scheme_path + "PROJECT.xcscheme", scheme_path +  @configurator.pod_name + ".xcscheme")
+            File.rename(scheme_path + "PROJECT_dev.xcscheme", scheme_path +  @configurator.pod_name + "_dev.xcscheme")
+            File.rename(scheme_path + "PROJECT_dis.xcscheme", scheme_path +  @configurator.pod_name + "_dis.xcscheme")
             
             # rename xcproject
             File.rename(project_folder + "/PROJECT.xcodeproj", project_folder + "/" +  @configurator.pod_name + ".xcodeproj")

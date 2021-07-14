@@ -19,14 +19,16 @@ class HomeViewController: BaseViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        Console.log("begin")
-        Console.benchmark {
-            for _ in 0..<1000 {
-                
-            }
-        } completion: {
-            Console.log("end, use \($0)")
-        }
+        OCCallSwift()
+        
+//        Console.log("begin")
+//        Console.benchmark {
+//            for _ in 0..<1000 {
+//
+//            }
+//        } completion: {
+//            Console.log("end, use \($0)")
+//        }
 
 //        present { alert in
 //            alert.title = "提示"

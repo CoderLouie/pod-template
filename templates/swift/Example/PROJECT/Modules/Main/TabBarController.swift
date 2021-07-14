@@ -36,7 +36,7 @@ class TabBarController: UITabBarController {
             .font: font,
             .foregroundColor: UIColor(gray: 105)], for: .selected)
         vc.title = title
-        addChildViewController(NavigationController(rootViewController: vc))
+        addChild(NavigationController(rootViewController: vc))
         return vc
     }
     

@@ -1,20 +1,49 @@
 
+# 官方仓库源
+source 'https://github.com/CocoaPods/Specs.git'
+
+
 platform :ios, '10.0'
 
 inhibit_all_warnings!
 
 use_frameworks!
 
-target '${POD_NAME}' do
-
+def commonPods
   pod 'SwiftyUserDefaults'
   pod 'Reusable'
   pod 'SnapKit'
   pod 'Then'
   pod 'SwifterSwift'
   pod 'Alamofire'
-
 end
+
+target '${POD_NAME}_dev' do
+  commonPods
+end
+
+target '${POD_NAME}_dis' do
+  commonPods
+end
+
+
+# abstract_target 'abstract_pod' do  #这里的abstract_pod在实际targets中不存在，是虚拟
+# 	pod 'SwiftyUserDefaults'
+# 	pod 'Reusable'
+# 	pod 'SnapKit'
+# 	pod 'Then'
+# 	pod 'SwifterSwift'
+# 	pod 'Alamofire'
+
+# 	target '${POD_NAME}_dev' do
+# 	    pod 'Masonry'
+# 	end
+
+# 	target '${POD_NAME}_dis' do
+# 	    pod 'SDWebImage'
+# 	end
+# end
+
 
 
 

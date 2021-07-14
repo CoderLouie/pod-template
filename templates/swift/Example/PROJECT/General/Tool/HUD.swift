@@ -104,7 +104,7 @@ extension HUD {
                 blurView.frame = bounds
                 addSubview(blurView)
                 
-                let indicator = UIActivityIndicatorView(activityIndicatorStyle: indicatorStyle)
+                let indicator = UIActivityIndicatorView(style: indicatorStyle)
                 indicator.startAnimating()
                 addSubview(indicator)
                 indicator.snp.makeConstraints {
@@ -426,5 +426,4 @@ extension HUD {
         }
     }
 }
-
 */

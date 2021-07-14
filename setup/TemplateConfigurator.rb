@@ -82,8 +82,6 @@ module Pod
             replace_variables_in_files
             clean_template_files
             rename_template_files
-            add_pods_to_podfile
-            customise_prefix
             reinitialize_git_repo
             run_pod_install
             
@@ -121,39 +119,10 @@ module Pod
                 File.open(file_name, "w") { |file| file.puts text }
             end
         end
-        
-        def add_pod_to_podfile podname
-            @pods_for_podfile << podname
-        end
-        
-        def add_pods_to_podfile
-            podfile = File.read podfile_path
-            podfile_content = @pods_for_podfile.map do |pod|
-                "pod '" + pod + "'"
-            end.join("\n    ")
-            podfile.gsub!("${INCLUDED_PODS}", podfile_content)
-            File.open(podfile_path, "w") { |file| file.puts podfile }
-        end
+         
         
         def add_line_to_pch line
             @prefixes << line
-        end
-        
-        def customise_prefix
-            prefix_path = "Example/Tests/Tests-Prefix.pch"
-            return unless File.exists? prefix_path
-            
-            pch = File.read prefix_path
-            pch.gsub!("${INCLUDED_PREFIXES}", @prefixes.join("\n  ") )
-            File.open(prefix_path, "w") { |file| file.puts pch }
-        end
-        
-        def set_test_framework(test_type, extension, folder)
-            content_path = "setup/test_examples/" + test_type + "." + extension
-            tests_path = "templates/" + folder + "/Example/Tests/Tests." + extension
-            tests = File.read tests_path
-            tests.gsub!("${TEST_EXAMPLE}", File.read(content_path) )
-            File.open(tests_path, "w") { |file| file.puts tests }
         end
         
         def rename_template_files
