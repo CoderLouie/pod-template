@@ -1,5 +1,5 @@
 //
-//  NSObject+Then.h
+//  NSTimer+LYAdd.h
 //  PROJECT
 //
 //  Created by USER_NAME on TODAYS_DATE.
@@ -10,12 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (Then)
+@interface NSTimer (LYAdd)
+/// 暂停
+- (void)pause;
 
-+ (instancetype)instantiate:(void (^)(id me))work;
+/// 继续
+- (void)resume;
 
-- (instancetype)then:(void (^)(id me))work; 
-
+/// 一段时间间隔后继续
+- (void)resumeAfterDelay:(NSTimeInterval)interval;
 @end
 
 NS_ASSUME_NONNULL_END

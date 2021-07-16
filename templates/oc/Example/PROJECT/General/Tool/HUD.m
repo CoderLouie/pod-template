@@ -20,75 +20,58 @@
 
 
 @implementation NSString (HUD)
-- (NSString *)safelyString
-{
-    if (![self isKindOfClass:[NSString class]])
-    {
-        return nil;
-    }
-    if (!self.length)
-    {
-        return nil;
-    }
+- (NSString *)safelyString {
+    if (![self isKindOfClass:[NSString class]]) return nil;
+    if (!self.length) return nil;
     return self;
 }
 @end
 
 @implementation HUD
 
-+ (void)initialize
-{
++ (void)initialize {
     [self reset];
 }
 
-+ (void)reset
-{
++ (void)reset {
     [SVProgressHUD resetOffsetFromCenter];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     [SVProgressHUD setMaximumDismissTimeInterval:5];
     [SVProgressHUD setMinimumDismissTimeInterval:1];
 }
 
-+ (void)setMaximumDismissTimeInterval:(NSTimeInterval)interval
-{
++ (void)setMaximumDismissTimeInterval:(NSTimeInterval)interval {
     [SVProgressHUD setMaximumDismissTimeInterval:interval];
 }
 
-+ (void)setMinimumDismissTimeInterval:(NSTimeInterval)interval
-{
++ (void)setMinimumDismissTimeInterval:(NSTimeInterval)interval {
     [SVProgressHUD setMinimumDismissTimeInterval:interval];
 }
 
-+ (void)showLoading
-{
++ (void)showLoading {
     [SVProgressHUD show];
 }
 
-+ (void)showLoadingWithStatus:(NSString *)status
-{
++ (void)showLoadingWithStatus:(NSString *)status {
     [SVProgressHUD showWithStatus:status.safelyString];
 }
 
-+ (void)showProgress:(float)progress status:(NSString*)status
-{
++ (void)showProgress:(float)progress status:(NSString*)status {
     [SVProgressHUD showProgress:progress status:status.safelyString];
 }
 
-+ (void)showInfoWithStatus:(NSString *)status
-{
++ (void)showInfoWithStatus:(NSString *)status {
     [SVProgressHUD showInfoWithStatus:status.safelyString];
 }
 
 + (void)showInfoWithStatus:(NSString *)status
-              dismissAfter:(NSTimeInterval)interval
-{
+              dismissAfter:(NSTimeInterval)interval {
     [SVProgressHUD showInfoWithStatus:status.safelyString];
     [SVProgressHUD dismissWithDelay:interval];
 }
 
 + (void)showInfoWithStatus:(NSString *)status
-                completion:(void(^)(void))completion
-{
+                completion:(void(^)(void))completion {
     NSString *tip = status.safelyString;
     NSTimeInterval delay = [SVProgressHUD displayDurationForString:tip];
     [SVProgressHUD showInfoWithStatus:status.safelyString];
@@ -97,24 +80,20 @@
 
 + (void)showInfoWithStatus:(NSString *)status
               dismissAfter:(NSTimeInterval)interval
-                completion:(void(^)(void))completion
-{
+                completion:(void(^)(void))completion {
     [SVProgressHUD showInfoWithStatus:status.safelyString];
     [SVProgressHUD dismissWithDelay:interval completion:completion];
 }
 
-+ (void)showSuccessWithStatus:(NSString *)status
-{
++ (void)showSuccessWithStatus:(NSString *)status {
     [SVProgressHUD showSuccessWithStatus:status.safelyString];
 }
 
-+ (void)showErrorWithStatus:(NSString *)status
-{
++ (void)showErrorWithStatus:(NSString *)status {
     [SVProgressHUD showErrorWithStatus:status.safelyString];
 }
 
-+ (void)showTip:(NSString *)tip
-{
++ (void)showTip:(NSString *)tip {
     CGSize size = [UIScreen mainScreen].bounds.size;
     CGFloat screenW = size.width;
     [self showTip:tip marginFromScrrenBottomEdge:20 * (screenW / 375.0)];
@@ -127,8 +106,7 @@
 
 + (void)showTip:(NSString *)tip
 marginFromScrrenBottomEdge:(CGFloat)margin
-     completion:(void(^)(void))completion
-{
+     completion:(void(^)(void))completion {
     NSTimeInterval delay = [SVProgressHUD displayDurationForString:tip.safelyString];
     CGSize size = [UIScreen mainScreen].bounds.size;
     CGFloat screenH = size.height;
@@ -148,13 +126,11 @@ marginFromScrrenBottomEdge:(CGFloat)margin
     }];
 }
 
-+ (void)dismiss
-{
++ (void)dismiss {
     if ([SVProgressHUD isVisible]) [SVProgressHUD dismiss];
 }
 
-+ (BOOL)isVisible
-{
++ (BOOL)isVisible {
     return [SVProgressHUD isVisible];
 }
 

@@ -61,7 +61,9 @@ extension LoadingAction where Self: UIView {
 }
 fileprivate typealias LoadingViewAction = LoadingAction & UIView
 
+#if canImport(Lottie)
 import Lottie
+#endif
 extension HUD {
     enum Loading {
         enum Style {
@@ -122,6 +124,7 @@ extension HUD {
                 }
                 self.init(frame: UIScreen.main.bounds)
                 backgroundColor = UIColor(gray: 0, alpha: 0.6)
+                #if canImport(Lottie)
                 AnimationView(filePath: animPath).do {
                     $0.loopMode = .loop
                     $0.contentMode = .scaleAspectFill
@@ -132,6 +135,7 @@ extension HUD {
                     }
                     $0.play()
                 }
+                #endif
             }
             func show() {
                 UIView.animate(withDuration: 0.25) {
@@ -164,7 +168,7 @@ extension HUD {
             guard let w = UIApplication.shared.delegate?.window, let window = w else { return }
             let margin = 10.fit
             let box = UIView()
-            box.backgroundColor = UIColor(hex: "1c1c1c", alpha: 0.8)
+            box.backgroundColor = UIColor(gray: 28, alpha: 0.8)
             box.layer.cornerRadius = 4.fit
             box.clipsToBounds = true
             
@@ -249,7 +253,7 @@ extension HUD {
             }
             private func setup() {
                 self.frame = UIScreen.main.bounds
-                backgroundColor = UIColor(hex: "ffffff", alpha: 0.3)
+                backgroundColor = UIColor(gray: 255, alpha: 0.3)
                 UIVisualEffectView(effect: UIBlurEffect(style: .dark)).do {
                     $0.alpha = 0.99
                     $0.frame = bounds
@@ -265,7 +269,7 @@ extension HUD {
                     trackView = UIView().then {
                         $0.layer.cornerRadius = 3.fit
                         $0.clipsToBounds = true
-                        $0.backgroundColor = UIColor(hex: "ffffff", alpha: 0.3)
+                        $0.backgroundColor = UIColor(gray: 255, alpha: 0.3)
                         
                         box.addSubview($0)
                         $0.snp.makeConstraints { make in

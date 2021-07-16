@@ -12,33 +12,18 @@
 
 @implementation UIAlertView (LYAdd)
 
-
-- (UIAlertView *(^)(NSString *, void (^)(void)))addNormalButton
-{
-    return ^(NSString *title, void(^handler)(void))
-    {
-        NSAssert(title.length, @"A button without a title cannot be added to the alert view.");
-        NSInteger idx = [self addButtonWithTitle:title];
-        objc_setAssociatedObject(self, (char *)idx, handler, OBJC_ASSOCIATION_COPY_NONATOMIC);
-        return self;
-    };
+- (UIAlertView *)addDefaultActionWithTitle:(NSString *)title handler:(void (^)(void))handler {
+    NSInteger idx = [self addButtonWithTitle:title];
+    objc_setAssociatedObject(self, (char *)idx, handler, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    return self;
 }
 
-- (UIAlertView *(^)(NSString *, void (^)(void)))setCancelButton
-{
-    return ^(NSString *title, void(^handler)(void))
-    {
-        if (!title.length)
-        {
-            title = NSLocalizedString(@"Cancel", nil);
-        }
-        
-        NSInteger idx = [self addButtonWithTitle:title];
-        self.cancelButtonIndex = idx;
-        objc_setAssociatedObject(self, (char *)idx, handler, OBJC_ASSOCIATION_COPY_NONATOMIC);
-        return self;
-    };
-}
+- (UIAlertView *)addCancelActionWithTitle:(NSString *)title handler:(void (^)(void))handler {
+    NSInteger idx = [self addButtonWithTitle:title];
+    self.cancelButtonIndex = idx;
+    objc_setAssociatedObject(self, (char *)idx, handler, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    return self;
+} 
 
 @end
 
