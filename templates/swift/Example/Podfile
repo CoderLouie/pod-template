@@ -17,7 +17,7 @@ def commonPods
   pod 'Then'
   pod 'SwifterSwift'
   pod 'Moya'
-  pod 'SwiftJSON'
+  pod 'SwiftyJSON'
 end
 
 target '${POD_NAME}_dev' do
