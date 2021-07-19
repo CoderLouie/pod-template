@@ -19,7 +19,7 @@ class HomeViewController: BaseViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        OCCallSwift()
+        OCCallSwiftTest()
         
 //        Console.log("begin")
 //        Console.benchmark {

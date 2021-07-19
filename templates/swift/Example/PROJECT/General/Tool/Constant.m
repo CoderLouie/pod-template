@@ -29,7 +29,7 @@ void OCBenchmark(void (^block)(void), void (^complete)(double ms)) {
 
 #import "OC_Call_Swift.h"
 
-void OCCallSwift() {
+void OCCallSwiftTest() {
     Car *c = [[Car alloc] initWithPrice:10.5 band:@"BMW"];
 
     c.band = @"Bently";

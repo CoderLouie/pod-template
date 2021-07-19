@@ -30,6 +30,9 @@ extension LocalizedStringConvertible where Self: RawRepresentable, Self.RawValue
         }
         return rawValue
     }
+    public func format(with args: CVarArg...) -> String {
+        String(format: value, arguments: args)
+    }
 }
 extension String {
     public var localized: String {

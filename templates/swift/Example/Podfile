@@ -16,7 +16,8 @@ def commonPods
   pod 'SnapKit'
   pod 'Then'
   pod 'SwifterSwift'
-  pod 'Alamofire'
+  pod 'Moya'
+  pod 'SwiftJSON'
 end
 
 target '${POD_NAME}_dev' do

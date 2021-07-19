@@ -53,7 +53,7 @@ public enum Console {
         #endif
     }
     
-    // YYKitMacro
+    /// 测试某段代码执行耗时
     static func benchmark(_ work: @escaping () -> Void, completion: @escaping (Double) -> Void) {
         OCBenchmark(work, completion) 
     }

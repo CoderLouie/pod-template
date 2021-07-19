@@ -10,8 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// 用于 暴露 用OC/C/C++实现的功能 给swift调用
+
 FOUNDATION_EXTERN void OCBenchmark(void (^block)(void), void (^complete)(double ms));
 
-FOUNDATION_EXTERN void OCCallSwift(void);
+FOUNDATION_EXTERN void OCCallSwiftTest(void);
 
 NS_ASSUME_NONNULL_END

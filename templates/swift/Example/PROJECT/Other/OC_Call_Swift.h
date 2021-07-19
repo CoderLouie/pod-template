@@ -2,8 +2,8 @@
 //  OC_Call_Swift.h
 //  PROJECT
 //
-//  Created by 李阳 on 2021/7/14.
-//  Copyright © 2021 gomo. All rights reserved.
+//  Created by USER_NAME on TODAYS_DATE.
+//  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
 //
 
 #ifndef OC_Call_Swift_h
