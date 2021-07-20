@@ -22,7 +22,7 @@ public extension GOMOCompatible {
         get { return GOMO(self) }
         set { self = newValue.base }
     }
-    static var deputy: GOMO<Self>.Type {
+    static var go: GOMO<Self>.Type {
         get { return GOMO<Self>.self }
         set {  }
     }

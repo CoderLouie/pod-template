@@ -9,7 +9,7 @@
 import Foundation
 
 enum App {
-    static var namespace: String {
+    public static var namespace: String {
         guard let namespace =  Bundle.main.infoDictionary?["CFBundleExecutable"] as? String else { return "" }
         return  namespace
     }

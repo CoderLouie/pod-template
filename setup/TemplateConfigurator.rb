@@ -96,8 +96,8 @@ module Pod
             
             system "pod install"
             
-            `git add .`
-            `git commit -m "Initial commit"`
+#            `git add .`
+#            `git commit -m "Initial commit"`
         end
         
         def clean_template_files
