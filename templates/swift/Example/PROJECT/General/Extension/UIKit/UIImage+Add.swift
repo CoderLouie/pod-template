@@ -8,5 +8,13 @@
 
 import UIKit
 
-extension UIImage { 
+extension UIImage {
+    func stretchableImage(anchor point: CGPoint = CGPoint(x: 0.5, y: 0.5)) -> UIImage? {
+        let tmp = size;
+        return stretchableImage(withLeftCapWidth: Int(tmp.width * point.x), topCapHeight: Int(tmp.height * point.y))
+    }
+    
+    func original() -> UIImage {
+        self.withRenderingMode(.alwaysOriginal)
+    }
 }

@@ -51,3 +51,20 @@ public extension String {
         return res
     }
 }
+
+public extension String {
+    func compareVersion(_ version: String) -> ComparisonResult {
+        guard !version.isEmpty else { return .orderedDescending }
+        let set = CharacterSet.decimalDigits.inverted
+        let nums1 = components(separatedBy: set)
+        let nums2 = version.components(separatedBy: set)
+        for i in 0..<min(nums1.count, nums2.count) {
+            guard let num1 = Int(nums1[i]) else { return .orderedAscending }
+            guard let num2 = Int(nums2[i]) else { return .orderedDescending }
+            guard num1 != num2 else { continue }
+            return num1 < num2 ? .orderedAscending : .orderedDescending
+        }
+        if nums1.count == nums2.count { return .orderedSame }
+        return nums1.count < nums2.count ? .orderedAscending : .orderedDescending
+    }
+}
