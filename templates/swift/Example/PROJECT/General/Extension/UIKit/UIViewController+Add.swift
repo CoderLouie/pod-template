@@ -8,6 +8,29 @@
 
 import UIKit
 
+
+public extension UIViewController {
+    func front() -> UIViewController {
+        if let presented = self.presentedViewController {
+            return presented.front()
+        } else if let nav = self as? UINavigationController,
+                  let visible = nav.visibleViewController {
+            return visible.front()
+        } else if let tab = self as? UITabBarController,
+                  let selected = tab.selectedViewController {
+            return selected.front()
+        } else {
+            for vc in self.children.reversed() {
+                if vc.view.window != nil {
+                    return vc.front()
+                }
+            }
+            return self
+        }
+    }
+}
+
+// MARK: - Alert
 public extension UIViewController {
     
     @discardableResult

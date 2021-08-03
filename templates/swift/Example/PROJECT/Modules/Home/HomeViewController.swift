@@ -14,7 +14,7 @@ class HomeViewController: BaseViewController {
         super.setupViews()
         
         let lbl = UILabel(frame: CGRect(x: 50, y: 100, width: 100, height: 20))
-        lbl.localText = Lan.Home.burst
+        lbl.localizeKey = Lan.Main.burst
         view.addSubview(lbl)
     }
 

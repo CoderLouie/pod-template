@@ -308,12 +308,22 @@ struct Screen {
     }
     
     static var safeAreaInsets: UIEdgeInsets {
-        var safeAreaInsets: UIEdgeInsets = .zero
         if #available(iOS 11.0, *) {
-            guard let inset = currentWindow?.safeAreaInsets else { return .zero }
-            safeAreaInsets = inset
+            guard let window = currentWindow else { return .zero }
+            if let inset = window.rootViewController?.view.safeAreaInsets,
+               inset.top > 0 { return inset }
+            return window.safeAreaInsets
         }
-        return safeAreaInsets
+        let height = UIApplication.shared.statusBarFrame.height
+        return UIEdgeInsets(top: height, left: 0, bottom: 0, right: 0)
+    }
+    
+    static var frontViewController: UIViewController {
+        guard let window = currentWindow,
+              let rootVC = window.rootViewController else {
+            fatalError()
+        }
+        return rootVC.front()
     }
 }
  

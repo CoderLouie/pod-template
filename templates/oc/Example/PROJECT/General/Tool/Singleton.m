@@ -10,19 +10,19 @@
 
  
 @implementation Singleton
-
-+ (instancetype)create {
-    return [[[self class] alloc] init];
-}
+ 
 + (instancetype)shared {
-    static Singleton *singleton;
+    static Singleton *singleton = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        singleton = [self create];
+        singleton = [[super allocWithZone:NULL] init];
     });
     return singleton;
 }
 
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    return [self shared];
+}
 
 - (id)copyWithZone:(NSZone *)zone {
     return self;

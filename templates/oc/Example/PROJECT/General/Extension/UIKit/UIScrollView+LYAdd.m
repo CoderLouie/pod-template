@@ -118,13 +118,13 @@
     return self.offsetMaxR - self.bounds.size.width;
 }
 - (CGFloat)offsetMinB {
-    return self.offsetMaxB - self.bounds.size.height;
+    return self.offsetMinT + self.bounds.size.height;
 }
 - (CGFloat)offsetMaxB {
     return self.contentSize.height + self.insetB;
 }
 - (CGFloat)offsetMinR {
-    return self.offsetMinR + self.bounds.size.width;
+    return self.offsetMinL + self.bounds.size.width;
 }
 - (CGFloat)offsetMaxR {
     return self.contentSize.width + self.insetR;
@@ -132,20 +132,20 @@
 
 /// 是否在最顶端
 - (BOOL)atTopPosition {
-    return self.offsetT == -self.insetT;
+    return self.offsetT == self.offsetMinT;
 }
 /// 是否在最底部
 - (BOOL)atBottomPosition {
-    return self.offsetB == self.contentH + self.insetB;
+    return self.offsetT == self.offsetMaxT;
 }
 /// 是否在最左边
 - (BOOL)atLeftPosition {
-    return self.offsetL == -self.insetL;
+    return self.offsetL == self.offsetMinL;
 }
 
 /// 是否在最右边
 - (BOOL)atRightPosition {
-    return self.offsetR == self.contentW + self.insetR;
+    return self.offsetL == self.offsetMaxL;
 }
 
 /// 水平滚动一段距离
@@ -185,11 +185,14 @@
     CGPoint point = [self.panGestureRecognizer translationInView:self.superview];
     if (point.y > 0.0f) {
         direction |= LYScrollDirectionUp;
-    } else if (point.y < 0.0f) {
+    }
+    if (point.y < 0.0f) {
         direction |= LYScrollDirectionDown;
-    } else if (point.x < 0.0f) {
+    }
+    if (point.x < 0.0f) {
         direction |= LYScrollDirectionLeft;
-    } else if (point.x > 0.0f) {
+    }
+    if (point.x > 0.0f) {
         direction |= LYScrollDirectionRight;
     }
     
