@@ -27,10 +27,35 @@ extension UIImage {
         self.withRenderingMode(.alwaysOriginal)
     }
     
+    enum CropArea {
+        case top, left, bottom, right
+    }
+    func cropAspectFit(at area: CropArea = .top,
+                       size fitSize: CGSize) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(fitSize, true, 0)
+        defer { UIGraphicsEndImageContext() }
+        switch area {
+        case .top:
+            let height = fitSize.width * size.height / size.width
+            self.draw(in: CGRect(x: 0, y: 0, width: fitSize.width, height: height))
+        case .bottom:
+            let height = fitSize.width * size.height / size.width
+            self.draw(in: CGRect(x: 0, y: size.height - height, width: fitSize.width, height: height))
+            break
+        case .left:
+            break
+        case .right:
+            break
+        }
+        
+        return UIGraphicsGetImageFromCurrentImageContext()
+    }
     
-    public convenience init?(loadFromFile path: String, in bundleClass: AnyClass? = nil) {
-        guard !path.hasSuffix("/") else { return nil }
-        let nspath = path as NSString
+    
+    public convenience init?(fileNamed name: String,
+                             in bundleClass: AnyClass? = nil) {
+        guard !name.hasSuffix("/") else { return nil }
+        let nspath = name as NSString
         
         let bundle = bundleClass.map { Bundle(for: $0) } ?? Bundle.main
         let res = nspath.deletingPathExtension
@@ -47,7 +72,6 @@ extension UIImage {
                 }
             }
         }
-        
-        return nil
+        self.init(named: name)
     }
 }

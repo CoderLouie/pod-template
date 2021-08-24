@@ -21,7 +21,6 @@ public enum Language {
     
     private static let CurrentLanguageKey = "CurrentLanguageKey"
     private static let DefaultLanguage = "en"
-    //    private static let BaseLanguage = "Base"
     
     public private(set) static var current: String = {
         if let currentLanguage = UserDefaults.standard.object(forKey: CurrentLanguageKey) as? String {
@@ -60,7 +59,6 @@ public enum Language {
     }
     
     public static func displayName(for language: String, localized: Bool = false) -> String {
-//        let locale = NSLocale(localeIdentifier: current)
         let locale = NSLocale(localeIdentifier: localized ? current : language)
         if let displayName = locale.displayName(forKey: .identifier, value: language) {
             return displayName

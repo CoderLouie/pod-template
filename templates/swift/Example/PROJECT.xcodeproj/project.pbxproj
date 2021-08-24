@@ -18,7 +18,6 @@
 		B60ECB9626A593A100A5B01C /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60ECB9026A593A100A5B01C /* App.swift */; };
 		B610EA4C269E8AC600D91E7D /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = B610EA4B269E8AC600D91E7D /* Constant.m */; };
 		B610EA4F269EB14F00D91E7D /* UIView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB7A269C1502004DA6A9 /* UIView+Add.swift */; };
-		B610EA50269EB14F00D91E7D /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB9F269C1CEB004DA6A9 /* HUD.swift */; };
 		B610EA51269EB14F00D91E7D /* Value+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB7D269C1502004DA6A9 /* Value+Add.swift */; };
 		B610EA52269EB14F00D91E7D /* Lan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDBAD269C21AA004DA6A9 /* Lan.swift */; };
 		B610EA53269EB14F00D91E7D /* SwiftyFitsize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB94269C1B5E004DA6A9 /* SwiftyFitsize.swift */; };
@@ -49,6 +48,56 @@
 		B610EB15269EBA3600D91E7D /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610EB13269EBA3600D91E7D /* Car.swift */; };
 		B62B9C4F2698A2C0000A3609 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62B9C4E2698A2C0000A3609 /* Launch Screen.storyboard */; };
 		B62B9C572698A631000A3609 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B9C562698A631000A3609 /* NavigationViewController.swift */; };
+		B62E960826D4D0FC00D3AC8F /* HUD+Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960126D4D0FC00D3AC8F /* HUD+Popup.swift */; };
+		B62E960926D4D0FC00D3AC8F /* HUD+Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960126D4D0FC00D3AC8F /* HUD+Popup.swift */; };
+		B62E960A26D4D0FC00D3AC8F /* HUD+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960226D4D0FC00D3AC8F /* HUD+Progress.swift */; };
+		B62E960B26D4D0FC00D3AC8F /* HUD+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960226D4D0FC00D3AC8F /* HUD+Progress.swift */; };
+		B62E960C26D4D0FC00D3AC8F /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960326D4D0FC00D3AC8F /* HUD.swift */; };
+		B62E960D26D4D0FC00D3AC8F /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960326D4D0FC00D3AC8F /* HUD.swift */; };
+		B62E960E26D4D0FC00D3AC8F /* HUD+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960426D4D0FC00D3AC8F /* HUD+Loading.swift */; };
+		B62E960F26D4D0FC00D3AC8F /* HUD+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960426D4D0FC00D3AC8F /* HUD+Loading.swift */; };
+		B62E961026D4D0FC00D3AC8F /* HUD+Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960526D4D0FC00D3AC8F /* HUD+Tips.swift */; };
+		B62E961126D4D0FC00D3AC8F /* HUD+Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960526D4D0FC00D3AC8F /* HUD+Tips.swift */; };
+		B62E961226D4D0FC00D3AC8F /* HUD+Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960626D4D0FC00D3AC8F /* HUD+Sheet.swift */; };
+		B62E961326D4D0FC00D3AC8F /* HUD+Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960626D4D0FC00D3AC8F /* HUD+Sheet.swift */; };
+		B62E961426D4D0FC00D3AC8F /* HUD+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960726D4D0FC00D3AC8F /* HUD+Alert.swift */; };
+		B62E961526D4D0FC00D3AC8F /* HUD+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E960726D4D0FC00D3AC8F /* HUD+Alert.swift */; };
+		B62E961826D4D25300D3AC8F /* CAAnimation+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E961726D4D25300D3AC8F /* CAAnimation+Add.swift */; };
+		B62E961926D4D25300D3AC8F /* CAAnimation+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E961726D4D25300D3AC8F /* CAAnimation+Add.swift */; };
+		B62E961B26D4D2FD00D3AC8F /* UINavigationController+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E961A26D4D2FD00D3AC8F /* UINavigationController+Add.swift */; };
+		B62E961C26D4D2FD00D3AC8F /* UINavigationController+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E961A26D4D2FD00D3AC8F /* UINavigationController+Add.swift */; };
+		B62E962026D4D43000D3AC8F /* UIBarButtonItemAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E961F26D4D43000D3AC8F /* UIBarButtonItemAdd.swift */; };
+		B62E962126D4D43000D3AC8F /* UIBarButtonItemAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E961F26D4D43000D3AC8F /* UIBarButtonItemAdd.swift */; };
+		B62E962326D4D45400D3AC8F /* WaterflowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E962226D4D45400D3AC8F /* WaterflowLayout.swift */; };
+		B62E962426D4D45400D3AC8F /* WaterflowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E962226D4D45400D3AC8F /* WaterflowLayout.swift */; };
+		B62E962626D4D47D00D3AC8F /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E962526D4D47D00D3AC8F /* PaddingLabel.swift */; };
+		B62E962726D4D47D00D3AC8F /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E962526D4D47D00D3AC8F /* PaddingLabel.swift */; };
+		B62E962926D4D4DD00D3AC8F /* LayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E962826D4D4DD00D3AC8F /* LayerView.swift */; };
+		B62E962A26D4D4DD00D3AC8F /* LayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E962826D4D4DD00D3AC8F /* LayerView.swift */; };
+		B62E962C26D4D51A00D3AC8F /* SheetBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E962B26D4D51A00D3AC8F /* SheetBox.swift */; };
+		B62E962D26D4D51A00D3AC8F /* SheetBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E962B26D4D51A00D3AC8F /* SheetBox.swift */; };
+		B62E962F26D4D53400D3AC8F /* LocalPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E962E26D4D53400D3AC8F /* LocalPlayerView.swift */; };
+		B62E963026D4D53400D3AC8F /* LocalPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E962E26D4D53400D3AC8F /* LocalPlayerView.swift */; };
+		B62E963326D4D62400D3AC8F /* UIColor+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E963226D4D62400D3AC8F /* UIColor+Config.swift */; };
+		B62E963426D4D62400D3AC8F /* UIColor+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E963226D4D62400D3AC8F /* UIColor+Config.swift */; };
+		B62E963726D4D6C600D3AC8F /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E963626D4D6C600D3AC8F /* DebugViewController.swift */; };
+		B62E963826D4D6C600D3AC8F /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E963626D4D6C600D3AC8F /* DebugViewController.swift */; };
+		B6B3B1DD26C0D55500551431 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1D226C0D55500551431 /* Then.swift */; };
+		B6B3B1DE26C0D55500551431 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1D226C0D55500551431 /* Then.swift */; };
+		B6B3B1DF26C0D55500551431 /* StoryboardSceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1D526C0D55500551431 /* StoryboardSceneBased.swift */; };
+		B6B3B1E026C0D55500551431 /* StoryboardSceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1D526C0D55500551431 /* StoryboardSceneBased.swift */; };
+		B6B3B1E126C0D55500551431 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1D626C0D55500551431 /* StoryboardBased.swift */; };
+		B6B3B1E226C0D55500551431 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1D626C0D55500551431 /* StoryboardBased.swift */; };
+		B6B3B1E326C0D55500551431 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1D826C0D55500551431 /* UICollectionView+Reusable.swift */; };
+		B6B3B1E426C0D55500551431 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1D826C0D55500551431 /* UICollectionView+Reusable.swift */; };
+		B6B3B1E526C0D55500551431 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1D926C0D55500551431 /* Reusable.swift */; };
+		B6B3B1E626C0D55500551431 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1D926C0D55500551431 /* Reusable.swift */; };
+		B6B3B1E726C0D55500551431 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1DA26C0D55500551431 /* UITableView+Reusable.swift */; };
+		B6B3B1E826C0D55500551431 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1DA26C0D55500551431 /* UITableView+Reusable.swift */; };
+		B6B3B1E926C0D55500551431 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1DB26C0D55500551431 /* NibLoadable.swift */; };
+		B6B3B1EA26C0D55500551431 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1DB26C0D55500551431 /* NibLoadable.swift */; };
+		B6B3B1EB26C0D55500551431 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1DC26C0D55500551431 /* NibOwnerLoadable.swift */; };
+		B6B3B1EC26C0D55500551431 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3B1DC26C0D55500551431 /* NibOwnerLoadable.swift */; };
 		B6CFDB73269C1454004DA6A9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB72269C1454004DA6A9 /* TabBarController.swift */; };
 		B6CFDB80269C1502004DA6A9 /* UIImage+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB77269C1502004DA6A9 /* UIImage+Add.swift */; };
 		B6CFDB81269C1502004DA6A9 /* UITabBarItem+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB78269C1502004DA6A9 /* UITabBarItem+Add.swift */; };
@@ -63,7 +112,6 @@
 		B6CFDB96269C1B5E004DA6A9 /* SwiftyFitsize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB94269C1B5E004DA6A9 /* SwiftyFitsize.swift */; };
 		B6CFDB9C269C1C88004DA6A9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB9B269C1C88004DA6A9 /* BaseView.swift */; };
 		B6CFDB9E269C1C8F004DA6A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB9D269C1C8F004DA6A9 /* BaseViewController.swift */; };
-		B6CFDBA0269C1CEB004DA6A9 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB9F269C1CEB004DA6A9 /* HUD.swift */; };
 		B6CFDBA5269C1FB2004DA6A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CFDBA7269C1FB2004DA6A9 /* InfoPlist.strings */; };
 		B6CFDBA9269C1FC0004DA6A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CFDBAB269C1FC0004DA6A9 /* Localizable.strings */; };
 		B6CFDBAE269C21AA004DA6A9 /* Lan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDBAD269C21AA004DA6A9 /* Lan.swift */; };
@@ -102,6 +150,31 @@
 		B610EB16269EBBC900D91E7D /* OC_Call_Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OC_Call_Swift.h; sourceTree = "<group>"; };
 		B62B9C4E2698A2C0000A3609 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B62B9C562698A631000A3609 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		B62E960126D4D0FC00D3AC8F /* HUD+Popup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HUD+Popup.swift"; sourceTree = "<group>"; };
+		B62E960226D4D0FC00D3AC8F /* HUD+Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HUD+Progress.swift"; sourceTree = "<group>"; };
+		B62E960326D4D0FC00D3AC8F /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		B62E960426D4D0FC00D3AC8F /* HUD+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HUD+Loading.swift"; sourceTree = "<group>"; };
+		B62E960526D4D0FC00D3AC8F /* HUD+Tips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HUD+Tips.swift"; sourceTree = "<group>"; };
+		B62E960626D4D0FC00D3AC8F /* HUD+Sheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HUD+Sheet.swift"; sourceTree = "<group>"; };
+		B62E960726D4D0FC00D3AC8F /* HUD+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HUD+Alert.swift"; sourceTree = "<group>"; };
+		B62E961726D4D25300D3AC8F /* CAAnimation+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAAnimation+Add.swift"; sourceTree = "<group>"; };
+		B62E961A26D4D2FD00D3AC8F /* UINavigationController+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Add.swift"; sourceTree = "<group>"; };
+		B62E961F26D4D43000D3AC8F /* UIBarButtonItemAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemAdd.swift; sourceTree = "<group>"; };
+		B62E962226D4D45400D3AC8F /* WaterflowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterflowLayout.swift; sourceTree = "<group>"; };
+		B62E962526D4D47D00D3AC8F /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		B62E962826D4D4DD00D3AC8F /* LayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerView.swift; sourceTree = "<group>"; };
+		B62E962B26D4D51A00D3AC8F /* SheetBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetBox.swift; sourceTree = "<group>"; };
+		B62E962E26D4D53400D3AC8F /* LocalPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPlayerView.swift; sourceTree = "<group>"; };
+		B62E963226D4D62400D3AC8F /* UIColor+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Config.swift"; sourceTree = "<group>"; };
+		B62E963626D4D6C600D3AC8F /* DebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		B6B3B1D226C0D55500551431 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		B6B3B1D526C0D55500551431 /* StoryboardSceneBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSceneBased.swift; sourceTree = "<group>"; };
+		B6B3B1D626C0D55500551431 /* StoryboardBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardBased.swift; sourceTree = "<group>"; };
+		B6B3B1D826C0D55500551431 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		B6B3B1D926C0D55500551431 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		B6B3B1DA26C0D55500551431 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		B6B3B1DB26C0D55500551431 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		B6B3B1DC26C0D55500551431 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		B6CFDB72269C1454004DA6A9 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B6CFDB77269C1502004DA6A9 /* UIImage+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Add.swift"; sourceTree = "<group>"; };
 		B6CFDB78269C1502004DA6A9 /* UITabBarItem+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Add.swift"; sourceTree = "<group>"; };
@@ -118,7 +191,6 @@
 		B6CFDB95269C1B5E004DA6A9 /* SwiftyFitsize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyFitsize.h; sourceTree = "<group>"; };
 		B6CFDB9B269C1C88004DA6A9 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		B6CFDB9D269C1C8F004DA6A9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		B6CFDB9F269C1CEB004DA6A9 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		B6CFDBA6269C1FB2004DA6A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6CFDBA8269C1FB6004DA6A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		B6CFDBAA269C1FC0004DA6A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -174,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				B6B3B1CF26C0D53D00551431 /* Libs */,
 				B6CFDB74269C14D6004DA6A9 /* General */,
 				B62B9C4D2698A281000A3609 /* Modules */,
 				B62B9C482698A1C1000A3609 /* Other */,
@@ -207,6 +280,7 @@
 		B62B9C4D2698A281000A3609 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B62E963526D4D6B400D3AC8F /* Setting */,
 				B62B9C552698A51D000A3609 /* Main */,
 				B62B9C502698A373000A3609 /* Home */,
 				B6CFDC38269C2FDF004DA6A9 /* Profile */,
@@ -231,9 +305,123 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		B62E960026D4D0FC00D3AC8F /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				B62E960326D4D0FC00D3AC8F /* HUD.swift */,
+				B62E960426D4D0FC00D3AC8F /* HUD+Loading.swift */,
+				B62E960526D4D0FC00D3AC8F /* HUD+Tips.swift */,
+				B62E960226D4D0FC00D3AC8F /* HUD+Progress.swift */,
+				B62E960726D4D0FC00D3AC8F /* HUD+Alert.swift */,
+				B62E960126D4D0FC00D3AC8F /* HUD+Popup.swift */,
+				B62E960626D4D0FC00D3AC8F /* HUD+Sheet.swift */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		B62E961626D4D25300D3AC8F /* QuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+				B62E961726D4D25300D3AC8F /* CAAnimation+Add.swift */,
+			);
+			path = QuartzCore;
+			sourceTree = "<group>";
+		};
+		B62E961D26D4D41C00D3AC8F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B62E962226D4D45400D3AC8F /* WaterflowLayout.swift */,
+				B62E961F26D4D43000D3AC8F /* UIBarButtonItemAdd.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B62E961E26D4D42700D3AC8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B62E962526D4D47D00D3AC8F /* PaddingLabel.swift */,
+				B62E962826D4D4DD00D3AC8F /* LayerView.swift */,
+				B62E962B26D4D51A00D3AC8F /* SheetBox.swift */,
+				B62E962E26D4D53400D3AC8F /* LocalPlayerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B62E963126D4D60900D3AC8F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B62E963226D4D62400D3AC8F /* UIColor+Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B62E963526D4D6B400D3AC8F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B62E963626D4D6C600D3AC8F /* DebugViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		B6B3B1CF26C0D53D00551431 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				B6B3B1D326C0D55500551431 /* Reusable */,
+				B6B3B1D026C0D55500551431 /* Then */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		B6B3B1D026C0D55500551431 /* Then */ = {
+			isa = PBXGroup;
+			children = (
+				B6B3B1D126C0D55500551431 /* Then */,
+			);
+			path = Then;
+			sourceTree = "<group>";
+		};
+		B6B3B1D126C0D55500551431 /* Then */ = {
+			isa = PBXGroup;
+			children = (
+				B6B3B1D226C0D55500551431 /* Then.swift */,
+			);
+			path = Then;
+			sourceTree = "<group>";
+		};
+		B6B3B1D326C0D55500551431 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				B6B3B1D426C0D55500551431 /* Storyboard */,
+				B6B3B1D726C0D55500551431 /* View */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		B6B3B1D426C0D55500551431 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B6B3B1D526C0D55500551431 /* StoryboardSceneBased.swift */,
+				B6B3B1D626C0D55500551431 /* StoryboardBased.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B6B3B1D726C0D55500551431 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6B3B1D826C0D55500551431 /* UICollectionView+Reusable.swift */,
+				B6B3B1D926C0D55500551431 /* Reusable.swift */,
+				B6B3B1DA26C0D55500551431 /* UITableView+Reusable.swift */,
+				B6B3B1DB26C0D55500551431 /* NibLoadable.swift */,
+				B6B3B1DC26C0D55500551431 /* NibOwnerLoadable.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B6CFDB74269C14D6004DA6A9 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				B62E963126D4D60900D3AC8F /* Config */,
 				B6CFDB99269C1C79004DA6A9 /* Custom */,
 				B6CFDB8F269C1B3E004DA6A9 /* Tool */,
 				B6CFDB75269C14E5004DA6A9 /* Extension */,
@@ -244,6 +432,7 @@
 		B6CFDB75269C14E5004DA6A9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B62E961626D4D25300D3AC8F /* QuartzCore */,
 				B6CFDB7C269C1502004DA6A9 /* Foundation */,
 				B6CFDB76269C1502004DA6A9 /* UIKit */,
 			);
@@ -255,6 +444,7 @@
 			children = (
 				B6CFDB79269C1502004DA6A9 /* UIColor+Add.swift */,
 				B6CFDB77269C1502004DA6A9 /* UIImage+Add.swift */,
+				B62E961A26D4D2FD00D3AC8F /* UINavigationController+Add.swift */,
 				B6CFDB78269C1502004DA6A9 /* UITabBarItem+Add.swift */,
 				B6CFDB7A269C1502004DA6A9 /* UIView+Add.swift */,
 				B6CFDB7B269C1502004DA6A9 /* UIViewController+Add.swift */,
@@ -279,6 +469,9 @@
 		B6CFDB8F269C1B3E004DA6A9 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				B6F05DBE26B8DFE900B20796 /* SwiftFitsize */,
+				B6F05DB726B8DF7A00B20796 /* Localize */,
+				B62E960026D4D0FC00D3AC8F /* HUD */,
 				B60ECB9026A593A100A5B01C /* App.swift */,
 				B610EB13269EBA3600D91E7D /* Car.swift */,
 				B6CFDB90269C1B47004DA6A9 /* Console.swift */,
@@ -286,13 +479,10 @@
 				B610EA4B269E8AC600D91E7D /* Constant.m */,
 				B60ECB8E26A593A100A5B01C /* Device.swift */,
 				B60ECB8F26A593A100A5B01C /* GOMO.swift */,
-				B6CFDB9F269C1CEB004DA6A9 /* HUD.swift */,
 				B6CFDBAD269C21AA004DA6A9 /* Lan.swift */,
-				B6F05DB726B8DF7A00B20796 /* Localize */,
 				B6CFDB91269C1B47004DA6A9 /* ObjectUnicode.swift */,
 				B6F05DBF26B8E01200B20796 /* Permission.swift */,
 				B6F05DC026B8E01200B20796 /* SandBox.swift */,
-				B6F05DBE26B8DFE900B20796 /* SwiftFitsize */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -300,6 +490,8 @@
 		B6CFDB99269C1C79004DA6A9 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				B62E961E26D4D42700D3AC8F /* Views */,
+				B62E961D26D4D41C00D3AC8F /* Other */,
 				B6CFDB9A269C1C80004DA6A9 /* Base */,
 			);
 			path = Custom;
@@ -445,36 +637,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62E962F26D4D53400D3AC8F /* LocalPlayerView.swift in Sources */,
+				B62E961026D4D0FC00D3AC8F /* HUD+Tips.swift in Sources */,
+				B62E961226D4D0FC00D3AC8F /* HUD+Sheet.swift in Sources */,
 				B6F05DCF26B90ABC00B20796 /* UIScrollView+Add.swift in Sources */,
 				B6CFDB83269C1502004DA6A9 /* UIView+Add.swift in Sources */,
-				B6CFDBA0269C1CEB004DA6A9 /* HUD.swift in Sources */,
+				B6B3B1DD26C0D55500551431 /* Then.swift in Sources */,
 				B610EB14269EBA3600D91E7D /* Car.swift in Sources */,
 				B6CFDB85269C1502004DA6A9 /* Value+Add.swift in Sources */,
 				B6CFDBAE269C21AA004DA6A9 /* Lan.swift in Sources */,
 				B6CFDB96269C1B5E004DA6A9 /* SwiftyFitsize.swift in Sources */,
 				B62B9C572698A631000A3609 /* NavigationViewController.swift in Sources */,
 				B6CFDB9E269C1C8F004DA6A9 /* BaseViewController.swift in Sources */,
+				B6B3B1DF26C0D55500551431 /* StoryboardSceneBased.swift in Sources */,
 				B6CFDB92269C1B47004DA6A9 /* Console.swift in Sources */,
 				B60ECB9526A593A100A5B01C /* App.swift in Sources */,
+				B62E960A26D4D0FC00D3AC8F /* HUD+Progress.swift in Sources */,
 				B6F05DBC26B8DF7A00B20796 /* LocalizedKeyRepresentable.swift in Sources */,
+				B6B3B1E326C0D55500551431 /* UICollectionView+Reusable.swift in Sources */,
 				B60ECB9326A593A100A5B01C /* GOMO.swift in Sources */,
+				B62E962026D4D43000D3AC8F /* UIBarButtonItemAdd.swift in Sources */,
+				B6B3B1E526C0D55500551431 /* Reusable.swift in Sources */,
+				B62E963326D4D62400D3AC8F /* UIColor+Config.swift in Sources */,
 				B6CFDB84269C1502004DA6A9 /* UIViewController+Add.swift in Sources */,
 				B610EA4C269E8AC600D91E7D /* Constant.m in Sources */,
 				B6CFDB73269C1454004DA6A9 /* TabBarController.swift in Sources */,
+				B62E962926D4D4DD00D3AC8F /* LayerView.swift in Sources */,
 				B6F05DC726B8E0F200B20796 /* Array+Add.swift in Sources */,
 				B6CFDB82269C1502004DA6A9 /* UIColor+Add.swift in Sources */,
+				B62E961826D4D25300D3AC8F /* CAAnimation+Add.swift in Sources */,
 				B6F05DC126B8E01200B20796 /* Permission.swift in Sources */,
 				B6F05DC326B8E01200B20796 /* SandBox.swift in Sources */,
 				B6F05DC926B8E0F200B20796 /* NotificationCenter+Add.swift in Sources */,
 				607FACD81AFB9204008FA782 /* HomeViewController.swift in Sources */,
+				B62E960E26D4D0FC00D3AC8F /* HUD+Loading.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				B6CFDB81269C1502004DA6A9 /* UITabBarItem+Add.swift in Sources */,
+				B62E960826D4D0FC00D3AC8F /* HUD+Popup.swift in Sources */,
+				B6B3B1E726C0D55500551431 /* UITableView+Reusable.swift in Sources */,
 				B6CFDB80269C1502004DA6A9 /* UIImage+Add.swift in Sources */,
+				B62E963726D4D6C600D3AC8F /* DebugViewController.swift in Sources */,
+				B62E962626D4D47D00D3AC8F /* PaddingLabel.swift in Sources */,
 				B6E46AAF269D9F3100346FC6 /* String+Add.swift in Sources */,
+				B6B3B1E126C0D55500551431 /* StoryboardBased.swift in Sources */,
+				B62E961426D4D0FC00D3AC8F /* HUD+Alert.swift in Sources */,
+				B62E962C26D4D51A00D3AC8F /* SheetBox.swift in Sources */,
 				B6CFDB93269C1B47004DA6A9 /* ObjectUnicode.swift in Sources */,
+				B6B3B1E926C0D55500551431 /* NibLoadable.swift in Sources */,
+				B62E962326D4D45400D3AC8F /* WaterflowLayout.swift in Sources */,
+				B62E961B26D4D2FD00D3AC8F /* UINavigationController+Add.swift in Sources */,
 				B6F05DBA26B8DF7A00B20796 /* Language.swift in Sources */,
+				B62E960C26D4D0FC00D3AC8F /* HUD.swift in Sources */,
 				B6CFDB9C269C1C88004DA6A9 /* BaseView.swift in Sources */,
 				B6CFDC3A269C3005004DA6A9 /* ProfileViewController.swift in Sources */,
+				B6B3B1EB26C0D55500551431 /* NibOwnerLoadable.swift in Sources */,
 				B6CFDB86269C1502004DA6A9 /* Date+Add.swift in Sources */,
 				B6CFDB87269C1502004DA6A9 /* DispatchQueue+Add.swift in Sources */,
 				B60ECB9126A593A100A5B01C /* Device.swift in Sources */,
@@ -485,36 +701,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62E963026D4D53400D3AC8F /* LocalPlayerView.swift in Sources */,
+				B62E961126D4D0FC00D3AC8F /* HUD+Tips.swift in Sources */,
+				B62E961326D4D0FC00D3AC8F /* HUD+Sheet.swift in Sources */,
 				B6F05DD026B90ABC00B20796 /* UIScrollView+Add.swift in Sources */,
 				B610EA4F269EB14F00D91E7D /* UIView+Add.swift in Sources */,
-				B610EA50269EB14F00D91E7D /* HUD.swift in Sources */,
+				B6B3B1DE26C0D55500551431 /* Then.swift in Sources */,
 				B610EB15269EBA3600D91E7D /* Car.swift in Sources */,
 				B610EA51269EB14F00D91E7D /* Value+Add.swift in Sources */,
 				B610EA52269EB14F00D91E7D /* Lan.swift in Sources */,
 				B610EA53269EB14F00D91E7D /* SwiftyFitsize.swift in Sources */,
 				B610EA54269EB14F00D91E7D /* NavigationViewController.swift in Sources */,
 				B610EA55269EB14F00D91E7D /* BaseViewController.swift in Sources */,
+				B6B3B1E026C0D55500551431 /* StoryboardSceneBased.swift in Sources */,
 				B610EA56269EB14F00D91E7D /* Console.swift in Sources */,
 				B60ECB9626A593A100A5B01C /* App.swift in Sources */,
+				B62E960B26D4D0FC00D3AC8F /* HUD+Progress.swift in Sources */,
 				B6F05DBD26B8DF7A00B20796 /* LocalizedKeyRepresentable.swift in Sources */,
+				B6B3B1E426C0D55500551431 /* UICollectionView+Reusable.swift in Sources */,
 				B60ECB9426A593A100A5B01C /* GOMO.swift in Sources */,
+				B62E962126D4D43000D3AC8F /* UIBarButtonItemAdd.swift in Sources */,
+				B6B3B1E626C0D55500551431 /* Reusable.swift in Sources */,
+				B62E963426D4D62400D3AC8F /* UIColor+Config.swift in Sources */,
 				B610EA57269EB14F00D91E7D /* UIViewController+Add.swift in Sources */,
 				B610EA58269EB14F00D91E7D /* Constant.m in Sources */,
 				B610EA59269EB14F00D91E7D /* TabBarController.swift in Sources */,
+				B62E962A26D4D4DD00D3AC8F /* LayerView.swift in Sources */,
 				B6F05DC826B8E0F200B20796 /* Array+Add.swift in Sources */,
 				B610EA5A269EB14F00D91E7D /* UIColor+Add.swift in Sources */,
+				B62E961926D4D25300D3AC8F /* CAAnimation+Add.swift in Sources */,
 				B6F05DC226B8E01200B20796 /* Permission.swift in Sources */,
 				B6F05DC426B8E01200B20796 /* SandBox.swift in Sources */,
 				B6F05DCA26B8E0F200B20796 /* NotificationCenter+Add.swift in Sources */,
 				B610EA5B269EB14F00D91E7D /* HomeViewController.swift in Sources */,
+				B62E960F26D4D0FC00D3AC8F /* HUD+Loading.swift in Sources */,
 				B610EA5C269EB14F00D91E7D /* AppDelegate.swift in Sources */,
 				B610EA5E269EB14F00D91E7D /* UITabBarItem+Add.swift in Sources */,
+				B62E960926D4D0FC00D3AC8F /* HUD+Popup.swift in Sources */,
+				B6B3B1E826C0D55500551431 /* UITableView+Reusable.swift in Sources */,
 				B610EA5F269EB14F00D91E7D /* UIImage+Add.swift in Sources */,
+				B62E963826D4D6C600D3AC8F /* DebugViewController.swift in Sources */,
+				B62E962726D4D47D00D3AC8F /* PaddingLabel.swift in Sources */,
 				B610EA60269EB14F00D91E7D /* String+Add.swift in Sources */,
+				B6B3B1E226C0D55500551431 /* StoryboardBased.swift in Sources */,
+				B62E961526D4D0FC00D3AC8F /* HUD+Alert.swift in Sources */,
+				B62E962D26D4D51A00D3AC8F /* SheetBox.swift in Sources */,
 				B610EA61269EB14F00D91E7D /* ObjectUnicode.swift in Sources */,
+				B6B3B1EA26C0D55500551431 /* NibLoadable.swift in Sources */,
+				B62E962426D4D45400D3AC8F /* WaterflowLayout.swift in Sources */,
+				B62E961C26D4D2FD00D3AC8F /* UINavigationController+Add.swift in Sources */,
 				B6F05DBB26B8DF7A00B20796 /* Language.swift in Sources */,
+				B62E960D26D4D0FC00D3AC8F /* HUD.swift in Sources */,
 				B610EA62269EB14F00D91E7D /* BaseView.swift in Sources */,
 				B610EA63269EB14F00D91E7D /* ProfileViewController.swift in Sources */,
+				B6B3B1EC26C0D55500551431 /* NibOwnerLoadable.swift in Sources */,
 				B610EA64269EB14F00D91E7D /* Date+Add.swift in Sources */,
 				B610EA65269EB14F00D91E7D /* DispatchQueue+Add.swift in Sources */,
 				B60ECB9226A593A100A5B01C /* Device.swift in Sources */,
@@ -655,7 +895,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
-					DEVELOPMENT,
+					"DEVELOPMENT=1",
 				);
 				INFOPLIST_FILE = PROJECT/Other/Info_dev.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -681,7 +921,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = NW3KV7KHV6;
-				GCC_PREPROCESSOR_DEFINITIONS = DEVELOPMENT;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEVELOPMENT=1";
 				INFOPLIST_FILE = PROJECT/Other/Info_dev.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

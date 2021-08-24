@@ -20,5 +20,53 @@ public extension UIView {
         } while index < views.count
         return nil
     }
+    
+    func embedInScrollView(_ scrollDirection: UIScrollView.ScrollDirection = .vertical,
+                           _ contentConfig: (UIView) -> Void,
+                           _ scrollConfig: ((UIScrollView) -> Void)? = nil) -> UIView {
+        let box = UIScrollView().then { s in
+            s.showsVerticalScrollIndicator = false
+            s.showsHorizontalScrollIndicator = false
+            s.contentInsetAdjustmentBehavior = .never
+            s.backgroundColor = .clear
+            scrollConfig?(s)
+            addSubview(s)
+            s.snp.makeConstraints { make in
+                make.edges.equalToSuperview()
+            }
+        }
+        return UIView().then {
+            contentConfig($0)
+            box.addSubview($0)
+            $0.snp.makeConstraints { make in
+                make.edges.equalTo(box)
+                if scrollDirection == .vertical {
+                    make.width.equalToSuperview()
+                } else {
+                    make.height.equalToSuperview()
+                }
+            }
+        }
+    }
 }
 
+public protocol ViewAddition {}
+public extension ViewAddition where Self: UIView {
+    
+    func layoutFinish(_ closure: @escaping (Self) -> Void) {
+        var n = 0
+        func recursive() {
+            if !bounds.isEmpty ||
+                n > 1 {
+                closure(self)
+                return
+            }
+            n += 1
+            DispatchQueue.main.async {
+                recursive()
+            }
+        }
+        recursive()
+    }
+}
+extension UIView: ViewAddition {}

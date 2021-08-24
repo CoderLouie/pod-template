@@ -24,21 +24,33 @@ public extension Lan {
 
 public extension Lan {
     
-    enum Video: String, LocalizedKeyRepresentable {
-        case recommend
-        
-        public var localizeKey: String { "video_" + rawValue }
-        public static var tableName: String? { "Video" }
-    }
-}
-
-public extension Lan {
-    
-    enum Gif: String, LocalizedKeyRepresentable {
+    enum Gif: String, GifLocalizedKeyRepresentable {
         case recommend
         
         public var localizeKey: String { "gif_" + rawValue }
-        public static var tableName: String? { "Gif" }
+    }
+}
+
+protocol GifLocalizedKeyRepresentable: LocalizedKeyRepresentable { }
+
+extension GifLocalizedKeyRepresentable {
+    public var tableName: String? { "Gif" }
+}
+
+
+public struct LocalizedKey: LocalizedKeyRepresentable {
+    public var localizeKey: String { key }
+    public var tableName: String? { tableFileName }
+    public private(set) var key: String
+    public private(set) var tableFileName: String
+    init(_ key: String, _ tableFileName: String) {
+        self.key = key
+        self.tableFileName = tableFileName
+    }
+}
+extension String {
+    var gif: LocalizedKey {
+        LocalizedKey(self, "Gif")
     }
 }
 
