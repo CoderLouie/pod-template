@@ -42,12 +42,11 @@ fileprivate enum TestCase: String, CaseIterable {
     
 }
 
-class DebugViewController: ATViewController {
+class DebugViewController: BaseViewController {
     
     override func setupViews() {
         super.setupViews()
         setupBody()
-        IAPManager.completeTransactions()
     }
     private unowned var tableView: UITableView!
     private lazy var items: [TestCase] = TestCase.allCases

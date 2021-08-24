@@ -27,7 +27,7 @@ class NavigationController: UINavigationController {
         backBtn.setImage(UIImage(named: "navigationbar_back_withtext_highlighted"), for: .highlighted)
         backBtn.setTitle(viewControllers.last?.title, for: .normal)
         backBtn.sizeToFit()
-        backBtn.addTarget(vc, action: #selector(backBarButtonItemClicked(sender:)), for: .touchUpInside)
+        backBtn.addTarget(vc, action: #selector(backBarButtonItemClicked), for: .touchUpInside)
     }
 
 }
@@ -39,7 +39,7 @@ extension NavigationController: UINavigationControllerDelegate {
 
 
 extension UIViewController {
-    @objc func backBarButtonItemClicked(sender: UIButton) {
+    @objc func backBarButtonItemClicked() {
         navigationController?.popViewController(animated: true)
     }
 }

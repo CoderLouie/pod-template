@@ -47,6 +47,23 @@ enum App {
         return envir
     }()
     
+    /// App是否处于debug模式
+    static var isDebug: Bool {
+        #if DEVELOPMENT
+        return true
+        #else
+        return false
+        #endif
+    }
+    /// 用于Release环境输出日志(true), 正式包需设置为false
+    static var logEnable: Bool {
+        #if DEVELOPMENT
+        return true
+        #else
+        return false
+        #endif
+    }
+    
     public static var namespace: String {
         guard let namespace =  Bundle.main.infoDictionary?["CFBundleExecutable"] as? String else { return "" }
         return  namespace

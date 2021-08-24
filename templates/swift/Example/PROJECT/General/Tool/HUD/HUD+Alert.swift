@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YYKit
 
 // MARK: - Alert
 extension HUD {
@@ -118,16 +119,10 @@ extension HUD {
             window.addSubview(view)
         }
         static func show(_ message: String,
-                         actionTitle: String = Lan.HUD.alert_ok.localized,
+                         actionTitle: String = "OK".localized,
                          action: (() -> Void)? = nil) {
             show(message) {
                 $0.addAction(actionTitle, style: .black, closure: action)
-            }
-        }
-        static func showExitAlert(_ forceExit: (() -> Void)? = nil) {
-            show(Lan.HUD.gif_exit_tips.localized) {
-                $0.addAction(Lan.HUD.alert_stay.localized, style: .black)
-                $0.addAction(Lan.HUD.alert_exit_force.localized, style: .white, closure: forceExit)
             }
         }
     }
