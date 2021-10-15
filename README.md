@@ -15,6 +15,10 @@ An opinionated template for creating a Pod with the following features:
 
 There are two reasons for wanting to work on this template, making your own or improving the one for everyone's. In both cases you will want to work with the ruby classes inside the `setup` folder, and the example base template that it works on from inside `template/ios/`. 
 
+## Usage
+`pod lib create YourProject --template-url=https://github.com/CoderLouie/pod-template.git`
+
+
 ## Best practices
 
 The command `pod lib create` aims to be ran along with this guide: https://guides.cocoapods.org/making/using-pod-lib-create.html so any changes of flow should be updated there also.

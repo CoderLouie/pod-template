@@ -20,7 +20,7 @@ extension Copyable where Self: NSObject {
     }
 }
 
-extension Copyable where Self: DataConvertible {
+extension Copyable where Self: DataCodable {
     func copyable() -> Self {
         guard let data = try? encode(),
               let copied = try? Self.decode(with: data) else {

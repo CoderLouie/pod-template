@@ -6,8 +6,7 @@
 //  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
 //
 
-import Dispatch
-import UIKit
+import Dispatch 
 
 public extension DispatchQueue {
     /// Execute the provided closure after a `TimeInterval`.
@@ -15,8 +14,11 @@ public extension DispatchQueue {
     /// - Parameters:
     ///   - delay:   `TimeInterval` to delay execution.
     ///   - closure: Closure to execute.
-    func after(_ delay: TimeInterval, execute closure: @escaping () -> Void) {
-        asyncAfter(deadline: .now() + delay, execute: closure)
+    @discardableResult
+    func after(_ delay: TimeInterval, execute closure: @escaping () -> Void) -> DispatchWorkItem {
+        let item = DispatchWorkItem(block: closure)
+        asyncAfter(deadline: .now() + delay, execute: item)
+        return item
     }
     
     private static var _onceTracker: Set<String> = []
