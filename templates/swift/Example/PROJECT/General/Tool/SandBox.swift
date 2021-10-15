@@ -1,5 +1,5 @@
 //
-//  FileTool.swift
+//  SandBox.swift
 //  PROJECT
 //
 //  Created by USER_NAME on TODAYS_DATE.
@@ -10,7 +10,8 @@ import Foundation
 
 public enum SandBox {
     
-    public static func enumerateContents(of path: String, progress:(_ path: String, _ level: Int, _ stop: UnsafeMutablePointer<Bool>) throws -> Void) rethrows {
+    public static func enumerateContents(of path: String,
+                                         progress:(_ path: String, _ level: Int, _ stop: UnsafeMutablePointer<Bool>) throws -> Void) rethrows {
         let manager = FileManager.default
         var isDirectory: ObjCBool = false
         var stop = false
@@ -42,10 +43,10 @@ public enum SandBox {
      如果path是文件夹：存在则会清空文件夹，不存在则会创建路径
      如果path是文件 ：存在则会删除，不存在则会创建文件所在路径
      */
-    public static func reset(path: String) throws {
+    public static func reset(path: String, clear: Bool = true) throws {
         let manager = FileManager.default
         var isDirectory: ObjCBool = false
-        if manager.fileExists(atPath: path, isDirectory: &isDirectory) {
+        if manager.fileExists(atPath: path, isDirectory: &isDirectory), clear {
             try manager.removeItem(atPath: path)
             if isDirectory.boolValue {
                 try manager.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
@@ -61,16 +62,15 @@ public enum SandBox {
     }
     
     public static func write(data: Data, toPath: String) throws {
-        try reset(path: toPath)
         try data.write(to: URL(fileURLWithPath: toPath), options: .atomic)
     }
     
-    public static func read(atPath: String) throws -> Data? {
-        let manager = FileManager.default
-        guard manager.fileExists(atPath: atPath) else {
-            return nil
-        }
-        return try Data(contentsOf: URL(fileURLWithPath: atPath))
+    public static func readData(from path: String) throws -> Data {
+//        let manager = FileManager.default
+//        guard manager.fileExists(atPath: path) else {
+//            return nil
+//        }
+        return try Data(contentsOf: URL(fileURLWithPath: path))
     }
     
     public static func diskSpaceFree() -> Int? {
@@ -88,8 +88,14 @@ public enum SandBox {
         return bundle.path(forResource: name, ofType: type)
     }
     
-    public static func path(forItem item: String, in directory: Directory) -> String {
-        directory.path(for: item)
+    public static func path(forItem item: String, in folder: Folder) -> String {
+        folder.path(for: item)
+    }
+    
+    public static func randomVideoPath() -> String {
+        let directory = SandBox.path(forItem: "/Video/", in: .temporary)
+        try? SandBox.reset(path: directory)
+        return directory + "\(UUID().uuidString).mov"
     }
 }
 
@@ -109,13 +115,19 @@ extension SandBox {
           /SystemData/
           /tmp/
      */
-    public enum Directory: CaseIterable {
+    public enum Folder: CaseIterable {
         case home, document, library, caches, temporary, preference, bundle
     }
 }
 
 
-extension SandBox.Directory {
+extension String {
+    public func filePath(under folder: SandBox.Folder) -> String {
+        return folder.path(for: self)
+    }
+}
+
+extension SandBox.Folder {
     public var path: String {
         let homePath = NSHomeDirectory()
         switch self {
@@ -135,7 +147,7 @@ extension SandBox.Directory {
             return Bundle.main.bundlePath
         }
     }
-    public func path(for item: String) -> String {
+    fileprivate func path(for item: String) -> String {
         let home = path
         if item.hasPrefix("/") { return home + item }
         return home + "/\(item)"

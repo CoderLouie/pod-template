@@ -9,18 +9,18 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder {
     var window: UIWindow?
+    
+    static var shard: AppDelegate? {
+        UIApplication.shared.delegate as? AppDelegate
+    }
+}
 
+extension AppDelegate: UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        #if DEVELOPMENT
-            NSLog("");
-        #else
-            NSLog("");
-        #endif
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = TabBarController()

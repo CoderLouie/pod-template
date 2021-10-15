@@ -58,43 +58,6 @@ extension Then where Self: Any {
     }
 }
 
-extension Then {
-    // 18:25:35.473+0800 ATViewController.swift 26 deinit
-    public func cout(_ items: Any...,
-                     separator: String = " ",
-                     terminator: String = "\n",
-                     file: NSString = #file,
-                     line: Int = #line,
-                     fn: String = #function) {
-        guard Console.debugLogEnable else { return }
-        var prefix = "\(Console.timeString) \(file.lastPathComponent) \(line) \(type(of: self)).\(fn)"
-        if prefix.hasSuffix("()") { prefix = String(prefix.dropLast(2)) }
-        prefix.append(":")
-        let content = items.map { String(describing: $0) }.joined(separator: separator)
-        print(prefix, content, terminator: terminator)
-    }
-    public static func cout(_ items: Any...,
-                     separator: String = " ",
-                     terminator: String = "\n",
-                     file: NSString = #file,
-                     line: Int = #line,
-                     fn: String = #function) {
-        guard Console.debugLogEnable else { return }
-        var prefix = "\(Console.timeString) \(file.lastPathComponent) \(line) \(type(of: self)).\(fn)"
-        if prefix.hasSuffix("()") { prefix = String(prefix.dropLast(2)) }
-        prefix.append(":")
-        let content = items.map { String(describing: $0) }.joined(separator: separator)
-        print(prefix, content, terminator: terminator)
-    }
-    func countFunc(file: NSString = #file,
-                        line: Int = #line,
-                        fn: String = #function) {
-        guard Console.debugLogEnable else { return }
-        var prefix = "\(Console.timeString) \(file.lastPathComponent) \(line) \(type(of: self)).\(fn)"
-        if prefix.hasSuffix("()") { prefix = String(prefix.dropLast(2)) }
-        print(prefix)
-    }
-}
 
 extension Then where Self: AnyObject {
     

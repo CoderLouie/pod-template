@@ -11,9 +11,7 @@ inhibit_all_warnings!
 use_frameworks!
 
 def commonPods
-  pod 'SwiftyUserDefaults'
-  # pod 'Reusable'
-  # pod 'Then'
+  pod 'SwiftyUserDefaults' 
   pod 'YYKit'
   pod 'SnapKit'
   pod 'SwifterSwift'
