@@ -38,6 +38,25 @@ extension String: LocalizedKeyRepresentable {
 }
 
 
+
+public struct LocalizedKey: LocalizedKeyRepresentable {
+    public var localizeKey: String { key }
+    public var tableName: String? { tableFileName }
+    public private(set) var key: String
+    public private(set) var tableFileName: String
+    init(_ key: String, _ tableFileName: String) {
+        self.key = key
+        self.tableFileName = tableFileName
+    }
+}
+extension String {
+    var gif: LocalizedKey {
+        LocalizedKey(self, "Gif")
+    }
+}
+
+
+
 extension UILabel {
     public var localizeKey: LocalizedKeyRepresentable? {
         get { return nil }

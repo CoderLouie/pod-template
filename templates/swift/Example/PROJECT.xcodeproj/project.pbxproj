@@ -17,7 +17,6 @@
 		B610EA4C269E8AC600D91E7D /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = B610EA4B269E8AC600D91E7D /* Constant.m */; };
 		B610EA4F269EB14F00D91E7D /* UIView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB7A269C1502004DA6A9 /* UIView+Add.swift */; };
 		B610EA51269EB14F00D91E7D /* Value+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB7D269C1502004DA6A9 /* Value+Add.swift */; };
-		B610EA52269EB14F00D91E7D /* Lan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDBAD269C21AA004DA6A9 /* Lan.swift */; };
 		B610EA53269EB14F00D91E7D /* SwiftyFitsize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB94269C1B5E004DA6A9 /* SwiftyFitsize.swift */; };
 		B610EA54269EB14F00D91E7D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B9C562698A631000A3609 /* NavigationViewController.swift */; };
 		B610EA55269EB14F00D91E7D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB9D269C1C8F004DA6A9 /* BaseViewController.swift */; };
@@ -136,7 +135,6 @@
 		B6CFDB9E269C1C8F004DA6A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDB9D269C1C8F004DA6A9 /* BaseViewController.swift */; };
 		B6CFDBA5269C1FB2004DA6A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CFDBA7269C1FB2004DA6A9 /* InfoPlist.strings */; };
 		B6CFDBA9269C1FC0004DA6A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CFDBAB269C1FC0004DA6A9 /* Localizable.strings */; };
-		B6CFDBAE269C21AA004DA6A9 /* Lan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDBAD269C21AA004DA6A9 /* Lan.swift */; };
 		B6CFDC3A269C3005004DA6A9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDC39269C3005004DA6A9 /* ProfileViewController.swift */; };
 		B6E08CDF2701B28C001CA19A /* Dictionary+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E08CDE2701B28C001CA19A /* Dictionary+Add.swift */; };
 		B6E08CE02701B28C001CA19A /* Dictionary+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E08CDE2701B28C001CA19A /* Dictionary+Add.swift */; };
@@ -234,7 +232,6 @@
 		B6CFDBA8269C1FB6004DA6A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		B6CFDBAA269C1FC0004DA6A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B6CFDBAC269C1FC3004DA6A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		B6CFDBAD269C21AA004DA6A9 /* Lan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lan.swift; sourceTree = "<group>"; };
 		B6CFDC39269C3005004DA6A9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B6E08CDE2701B28C001CA19A /* Dictionary+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Add.swift"; sourceTree = "<group>"; };
 		B6E08CE12701B291001CA19A /* Sequence+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+Add.swift"; sourceTree = "<group>"; };
@@ -520,7 +517,6 @@
 				B610EA4B269E8AC600D91E7D /* Constant.m */,
 				B60ECB8E26A593A100A5B01C /* Device.swift */,
 				B60ECB8F26A593A100A5B01C /* GOMO.swift */,
-				B6CFDBAD269C21AA004DA6A9 /* Lan.swift */,
 				B6CFDB91269C1B47004DA6A9 /* ObjectUnicode.swift */,
 				B6F05DBF26B8E01200B20796 /* Permission.swift */,
 				B6F05DC026B8E01200B20796 /* SandBox.swift */,
@@ -700,7 +696,6 @@
 				B6CFDB83269C1502004DA6A9 /* UIView+Add.swift in Sources */,
 				B610EB14269EBA3600D91E7D /* Car.swift in Sources */,
 				B6CFDB85269C1502004DA6A9 /* Value+Add.swift in Sources */,
-				B6CFDBAE269C21AA004DA6A9 /* Lan.swift in Sources */,
 				B6CFDB96269C1B5E004DA6A9 /* SwiftyFitsize.swift in Sources */,
 				B62E965426D4F45D00D3AC8F /* NibLoadable.swift in Sources */,
 				B62B9C572698A631000A3609 /* NavigationViewController.swift in Sources */,
@@ -778,7 +773,6 @@
 				B610EA4F269EB14F00D91E7D /* UIView+Add.swift in Sources */,
 				B610EB15269EBA3600D91E7D /* Car.swift in Sources */,
 				B610EA51269EB14F00D91E7D /* Value+Add.swift in Sources */,
-				B610EA52269EB14F00D91E7D /* Lan.swift in Sources */,
 				B610EA53269EB14F00D91E7D /* SwiftyFitsize.swift in Sources */,
 				B62E965526D4F45D00D3AC8F /* NibLoadable.swift in Sources */,
 				B610EA54269EB14F00D91E7D /* NavigationViewController.swift in Sources */,
