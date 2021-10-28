@@ -136,6 +136,8 @@
 		B6CFDBA5269C1FB2004DA6A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CFDBA7269C1FB2004DA6A9 /* InfoPlist.strings */; };
 		B6CFDBA9269C1FC0004DA6A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CFDBAB269C1FC0004DA6A9 /* Localizable.strings */; };
 		B6CFDC3A269C3005004DA6A9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDC39269C3005004DA6A9 /* ProfileViewController.swift */; };
+		B6D5079D272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5079C272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift */; };
+		B6D5079E272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5079C272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift */; };
 		B6E08CDF2701B28C001CA19A /* Dictionary+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E08CDE2701B28C001CA19A /* Dictionary+Add.swift */; };
 		B6E08CE02701B28C001CA19A /* Dictionary+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E08CDE2701B28C001CA19A /* Dictionary+Add.swift */; };
 		B6E08CE22701B291001CA19A /* Sequence+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E08CE12701B291001CA19A /* Sequence+Add.swift */; };
@@ -233,6 +235,7 @@
 		B6CFDBAA269C1FC0004DA6A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B6CFDBAC269C1FC3004DA6A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B6CFDC39269C3005004DA6A9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B6D5079C272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintMakerRelatable+Add.swift"; sourceTree = "<group>"; };
 		B6E08CDE2701B28C001CA19A /* Dictionary+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Add.swift"; sourceTree = "<group>"; };
 		B6E08CE12701B291001CA19A /* Sequence+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+Add.swift"; sourceTree = "<group>"; };
 		B6E08CE42701B2F5001CA19A /* WeakTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakTable.swift; sourceTree = "<group>"; };
@@ -468,6 +471,7 @@
 		B6CFDB75269C14E5004DA6A9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B6D5079C272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift */,
 				B62E961626D4D25300D3AC8F /* QuartzCore */,
 				B6CFDB7C269C1502004DA6A9 /* Foundation */,
 				B6CFDB76269C1502004DA6A9 /* UIKit */,
@@ -714,6 +718,7 @@
 				B610EA4C269E8AC600D91E7D /* Constant.m in Sources */,
 				B6CFDB73269C1454004DA6A9 /* TabBarController.swift in Sources */,
 				B62D20E22719648300C346FB /* VideoLoopView.swift in Sources */,
+				B6D5079D272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift in Sources */,
 				B62E962926D4D4DD00D3AC8F /* LayerView.swift in Sources */,
 				B62D20DD2719638500C346FB /* LayoutView.swift in Sources */,
 				B6F05DC726B8E0F200B20796 /* Array+Add.swift in Sources */,
@@ -791,6 +796,7 @@
 				B610EA58269EB14F00D91E7D /* Constant.m in Sources */,
 				B610EA59269EB14F00D91E7D /* TabBarController.swift in Sources */,
 				B62D20E32719648300C346FB /* VideoLoopView.swift in Sources */,
+				B6D5079E272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift in Sources */,
 				B62E962A26D4D4DD00D3AC8F /* LayerView.swift in Sources */,
 				B62D20DE2719638600C346FB /* LayoutView.swift in Sources */,
 				B6F05DC826B8E0F200B20796 /* Array+Add.swift in Sources */,
