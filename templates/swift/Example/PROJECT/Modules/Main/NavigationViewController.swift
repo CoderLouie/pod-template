@@ -28,6 +28,7 @@ class NavigationController: UINavigationController {
         backBtn.setTitle(viewControllers.last?.title, for: .normal)
         backBtn.sizeToFit()
         backBtn.addTarget(vc, action: #selector(backBarButtonItemClicked), for: .touchUpInside)
+        vc.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
     }
 
 }

@@ -10,8 +10,10 @@ import Foundation
 
 public enum SandBox {
     
-    public static func enumerateContents(of path: String,
-                                         progress:(_ path: String, _ level: Int, _ stop: UnsafeMutablePointer<Bool>) throws -> Void) rethrows {
+    public static func enumerateContents(
+        of path: String,
+        progress:(_ path: String, _ level: Int, _ stop: UnsafeMutablePointer<Bool>) throws -> Void) rethrows {
+        
         let manager = FileManager.default
         var isDirectory: ObjCBool = false
         var stop = false
@@ -25,7 +27,7 @@ public enum SandBox {
                 return try progress(subPath, innerLevel, &stop)
             }
             let contents = try manager.contentsOfDirectory(atPath: subPath)
-            for item in contents where item != ".DS_Store" {
+            for item in contents where !item.hasPrefix(".") {
                 let fullPath = (subPath as NSString).appendingPathComponent(item)
                 try enumerateContents(of: fullPath, innerLevel: innerLevel + 1)
             }

@@ -48,12 +48,12 @@ import UIKit
     /// 默认 iPad 适配缩放倍数 (0 , 1]
     @objc public private(set) var iPadFitMultiple: CGFloat = 0.5
     /// 中间安全区域参照高度
-    var referenceSafeAreaCenterHeight: CGFloat {
+    var referenceBodyHeight: CGFloat {
         if !isIPhoneXSeriesHeight { return referenceH }
         return referenceH - Screen.safeAreaT - Screen.safeAreaB
     }
     /// 仅去除顶部后的安全区域参照高度
-    var referenceSafeAreaWithoutTopHeight: CGFloat {
+    var referenceWithoutHeaderHeight: CGFloat {
         if !isIPhoneXSeriesHeight { return referenceH }
         return referenceH - Screen.safeAreaT
     }
@@ -70,9 +70,9 @@ import UIKit
     ///   - isIPhoneXSeriesHeight: 是否为iPhoneX系列的参照高度
     ///   - iPadFitMultiple: iPad 在适配后所得值的倍数 (0 , 1]
     @objc public static func reference(
-        width: CGFloat,
-        height: CGFloat = 667,
-        isIPhoneXSeriesHeight: Bool = false,
+        width: CGFloat = 375,
+        height: CGFloat = 812,
+        isIPhoneXSeriesHeight: Bool = true,
         iPadFitMultiple: CGFloat = 0.5
     ) {
         Self._shared.referenceW = width
@@ -97,13 +97,13 @@ import UIKit
         case .forceHeight:
             return Screen.height / referenceH * value
         case .flexibleSafeAreaCenterHeight:
-            return Screen.iPhoneXSeriesSafeAreaCenterHeight / referenceSafeAreaCenterHeight * value * fitMultiple
+            return Screen.bodyHeight / referenceBodyHeight * value * fitMultiple
         case .forceSafeAreaCenterHeight:
-            return Screen.iPhoneXSeriesSafeAreaCenterHeight / referenceSafeAreaCenterHeight * value
+            return Screen.bodyHeight / referenceBodyHeight * value
         case .flexibleSafeAreaWithoutTopHeight:
-            return Screen.iPhoneXSeriesSafeAreaWithoutTopHeight / referenceSafeAreaWithoutTopHeight * value * fitMultiple
+            return Screen.withoutHeaderHeight / referenceWithoutHeaderHeight * value * fitMultiple
         case .forceSafeAreaWithoutTopHeight:
-            return Screen.iPhoneXSeriesSafeAreaWithoutTopHeight / referenceSafeAreaWithoutTopHeight * value
+            return Screen.withoutHeaderHeight / referenceWithoutHeaderHeight * value
         }
     }
     fileprivate func fitNumber(
@@ -233,10 +233,10 @@ struct Screen {
     
     static let scale = UIScreen.main.scale
      
-    static var iPhoneXSeriesSafeAreaCenterHeight: CGFloat {
+    static var bodyHeight: CGFloat {
         return height - safeAreaT - safeAreaB
     }
-    static var iPhoneXSeriesSafeAreaWithoutTopHeight: CGFloat {
+    static var withoutHeaderHeight: CGFloat {
         return height - safeAreaT
     }
     

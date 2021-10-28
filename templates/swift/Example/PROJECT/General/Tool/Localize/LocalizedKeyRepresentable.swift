@@ -38,12 +38,11 @@ extension String: LocalizedKeyRepresentable {
 }
 
 
-
 public struct LocalizedKey: LocalizedKeyRepresentable {
     public var localizeKey: String { key }
     public var tableName: String? { tableFileName }
-    public private(set) var key: String
-    public private(set) var tableFileName: String
+    public let key: String
+    public let tableFileName: String
     init(_ key: String, _ tableFileName: String) {
         self.key = key
         self.tableFileName = tableFileName
@@ -54,37 +53,4 @@ extension String {
         LocalizedKey(self, "Gif")
     }
 }
-
-
-
-extension UILabel {
-    public var localizeKey: LocalizedKeyRepresentable? {
-        get { return nil }
-        set { text = newValue?.localized }
-    }
-}
-extension UIButton {
-    public func setLocalizeKey(_ title: LocalizedKeyRepresentable, for state: UIControl.State) {
-        setTitle(title.localized, for: state)
-    }
-}
-
-extension UIBarItem {
-    public var localizeKey: LocalizedKeyRepresentable? {
-        get { return nil }
-        set { title = newValue?.localized }
-    }
-}
-
-extension UINavigationItem {
-    public var localizeKey: LocalizedKeyRepresentable? {
-        get { return nil }
-        set { title = newValue?.localized }
-    }
-}
-extension UITextField {
-    public var localizeKey: LocalizedKeyRepresentable? {
-        get { nil }
-        set { placeholder = newValue?.localized }
-    }
-}
+ 

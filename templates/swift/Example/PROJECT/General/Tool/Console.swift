@@ -66,10 +66,8 @@ public enum Console {
                        file: NSString = #file,
                        line: Int = #line ) {
         guard App.logEnable else { return }
-        var prefix = "\(timeString) \(file.lastPathComponent) \(line)"
-        prefix.append(":")
         let content = items.map { String(describing: $0) }.joined(separator: separator)
-        print(prefix, content, terminator: terminator)
+        NSLog(content)
     }
     
     /// 测试某段代码执行耗时
