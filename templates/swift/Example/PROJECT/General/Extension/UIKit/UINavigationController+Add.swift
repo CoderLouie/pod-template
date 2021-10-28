@@ -10,9 +10,4 @@ import UIKit
 
 public extension UINavigationController {
     
-    @discardableResult
-    func popToViewController(where predicate: (UIViewController) -> Bool, animated: Bool = true) -> [UIViewController]? {
-        guard let target = viewControllers.last(where: predicate) else { return nil }
-        return popToViewController(target, animated: animated) 
-    }
 }

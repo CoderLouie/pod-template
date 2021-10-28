@@ -18,7 +18,7 @@ fileprivate extension DefaultsKeys {
     }
 }
 
-enum App {
+extension App {
     struct Environment: OptionSet {
         let rawValue: Int
         init(rawValue: Int) {
@@ -46,15 +46,7 @@ enum App {
         
         return envir
     }()
-    
-    /// App是否处于debug模式
-    static var isDebug: Bool {
-        #if DEVELOPMENT
-        return true
-        #else
-        return false
-        #endif
-    }
+     
     /// 用于Release环境输出日志(true), 正式包需设置为false
     static var logEnable: Bool {
         #if DEVELOPMENT
@@ -63,40 +55,7 @@ enum App {
         return false
         #endif
     }
-    
-    public static var namespace: String {
-        guard let namespace =  Bundle.main.infoDictionary?["CFBundleExecutable"] as? String else { return "" }
-        return  namespace
-    }
-    
-    public static var version: String? {
-        return Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
-    }
-    
-    public static var build: String? {
-        return Bundle.main.infoDictionary?["CFBundleVersion"] as? String
-    }
-    
-    public static var name: String? {
-        return Bundle.main.infoDictionary?["CFBundleDisplayName"] as? String
-    }
      
-    
-    public static func gotoSetting() {
-        let url = URL(string: UIApplication.openSettingsURLString)
-        openURL(url)
-    }
-    
-    public static func openURL(_ url: URL?, completion: ((Bool) -> Void)? = nil) {
-        guard let url = url else { completion?(false); return }
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: completion)
-        } else {
-            UIApplication.shared.openURL(url)
-            completion?(true)
-        }
-    }
-    
     public static var installTimestamp: TimeInterval {
         var installTime = Defaults[\.appInstallTimestamp]
         if installTime > 0 { return installTime }

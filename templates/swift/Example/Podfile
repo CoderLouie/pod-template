@@ -12,11 +12,10 @@ use_frameworks!
 
 def commonPods
   pod 'SwiftyUserDefaults' 
-  pod 'YYKit'
-  pod 'SnapKit'
-  pod 'SwifterSwift'
-  pod 'Moya'
-  pod 'SwiftyJSON'
+  pod 'YYKit' 
+  pod 'SwifterKnife'
+  pod 'Moya' 
+  
 end
 
 target '${POD_NAME}_dev' do
