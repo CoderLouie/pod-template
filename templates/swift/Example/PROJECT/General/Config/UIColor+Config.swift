@@ -8,7 +8,7 @@
 
 public extension UIColor {
     enum Tabbar {
-        public static var title: UIColor { UIColor(hex: 0x6D6D6D)! }
+        public static var title: UIColor { UIColor(hex: 0x6D6D6D) }
     }
     enum Navbar { 
         public static func bg(alpha: CGFloat = 1.0) -> UIColor { UIColor(r: 0, g: 0, b: 0, a: alpha) }

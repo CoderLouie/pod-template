@@ -2,7 +2,8 @@
 //  ConstraintMakerRelatable+Add.swift
 //  SnapKit
 //
-//  Created by 李阳 on 2021/10/28.
+//  Created by USER_NAME on TODAYS_DATE.
+//  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
 //
 
 import Foundation

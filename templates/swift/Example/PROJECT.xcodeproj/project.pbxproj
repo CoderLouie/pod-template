@@ -46,8 +46,6 @@
 		B62B9C572698A631000A3609 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B9C562698A631000A3609 /* NavigationViewController.swift */; };
 		B62D20DB2719628F00C346FB /* Scanner+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62D20DA2719628F00C346FB /* Scanner+Add.swift */; };
 		B62D20DC2719628F00C346FB /* Scanner+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62D20DA2719628F00C346FB /* Scanner+Add.swift */; };
-		B62D20DD2719638500C346FB /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E973926D62D1200D3AC8F /* LayoutView.swift */; };
-		B62D20DE2719638600C346FB /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E973926D62D1200D3AC8F /* LayoutView.swift */; };
 		B62D20DF2719638F00C346FB /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60ECB9026A593A100A5B01C /* App.swift */; };
 		B62D20E02719638F00C346FB /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60ECB9026A593A100A5B01C /* App.swift */; };
 		B62D20E22719648300C346FB /* VideoLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62D20E12719648300C346FB /* VideoLoopView.swift */; };
@@ -106,6 +104,10 @@
 		B6CFDC3A269C3005004DA6A9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFDC39269C3005004DA6A9 /* ProfileViewController.swift */; };
 		B6D5079D272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5079C272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift */; };
 		B6D5079E272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5079C272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift */; };
+		B6D507A4272B981A00DE90BE /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D507A3272B981A00DE90BE /* Protocol.swift */; };
+		B6D507A5272B981A00DE90BE /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D507A3272B981A00DE90BE /* Protocol.swift */; };
+		B6D507A7272B983B00DE90BE /* Libs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D507A6272B983B00DE90BE /* Libs.swift */; };
+		B6D507A8272B983B00DE90BE /* Libs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D507A6272B983B00DE90BE /* Libs.swift */; };
 		B6E08CDF2701B28C001CA19A /* Dictionary+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E08CDE2701B28C001CA19A /* Dictionary+Add.swift */; };
 		B6E08CE02701B28C001CA19A /* Dictionary+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E08CDE2701B28C001CA19A /* Dictionary+Add.swift */; };
 		B6E08CE22701B291001CA19A /* Sequence+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E08CE12701B291001CA19A /* Sequence+Add.swift */; };
@@ -154,7 +156,6 @@
 		B62E962E26D4D53400D3AC8F /* LocalPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPlayerView.swift; sourceTree = "<group>"; };
 		B62E963226D4D62400D3AC8F /* UIColor+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Config.swift"; sourceTree = "<group>"; };
 		B62E963626D4D6C600D3AC8F /* DebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
-		B62E973926D62D1200D3AC8F /* LayoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
 		B661B5EA2711A0DE002F3DAB /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		B66B2E0226ECC66800D77B60 /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		B6CFDB72269C1454004DA6A9 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -177,6 +178,8 @@
 		B6CFDBAC269C1FC3004DA6A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B6CFDC39269C3005004DA6A9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B6D5079C272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintMakerRelatable+Add.swift"; sourceTree = "<group>"; };
+		B6D507A3272B981A00DE90BE /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		B6D507A6272B983B00DE90BE /* Libs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Libs.swift; sourceTree = "<group>"; };
 		B6E08CDE2701B28C001CA19A /* Dictionary+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Add.swift"; sourceTree = "<group>"; };
 		B6E08CE12701B291001CA19A /* Sequence+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+Add.swift"; sourceTree = "<group>"; };
 		B6E46AAE269D9F3100346FC6 /* String+Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Add.swift"; sourceTree = "<group>"; };
@@ -345,6 +348,7 @@
 		B6B3B1CF26C0D53D00551431 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				B6D507A6272B983B00DE90BE /* Libs.swift */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -432,7 +436,6 @@
 		B6CFDB9A269C1C80004DA6A9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				B62E973926D62D1200D3AC8F /* LayoutView.swift */,
 				B6CFDB9D269C1C8F004DA6A9 /* BaseViewController.swift */,
 				B6CFDB9B269C1C88004DA6A9 /* BaseView.swift */,
 			);
@@ -450,6 +453,7 @@
 		B6D4A32426DC7C410049A824 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				B6D507A3272B981A00DE90BE /* Protocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -579,7 +583,6 @@
 				B62D20E22719648300C346FB /* VideoLoopView.swift in Sources */,
 				B6D5079D272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift in Sources */,
 				B62E962926D4D4DD00D3AC8F /* LayerView.swift in Sources */,
-				B62D20DD2719638500C346FB /* LayoutView.swift in Sources */,
 				B6F05DC726B8E0F200B20796 /* Array+Add.swift in Sources */,
 				B6CFDB82269C1502004DA6A9 /* UIColor+Add.swift in Sources */,
 				B62E961826D4D25300D3AC8F /* CAAnimation+Add.swift in Sources */,
@@ -599,11 +602,13 @@
 				B6E08CE22701B291001CA19A /* Sequence+Add.swift in Sources */,
 				B6CFDB93269C1B47004DA6A9 /* ObjectUnicode.swift in Sources */,
 				B62E962326D4D45400D3AC8F /* WaterflowLayout.swift in Sources */,
+				B6D507A4272B981A00DE90BE /* Protocol.swift in Sources */,
 				B62E961B26D4D2FD00D3AC8F /* UINavigationController+Add.swift in Sources */,
 				B66B2E0426ECC66800D77B60 /* PageControl.swift in Sources */,
 				B62E960C26D4D0FC00D3AC8F /* HUD.swift in Sources */,
 				B6CFDB9C269C1C88004DA6A9 /* BaseView.swift in Sources */,
 				B6CFDC3A269C3005004DA6A9 /* ProfileViewController.swift in Sources */,
+				B6D507A7272B983B00DE90BE /* Libs.swift in Sources */,
 				B6CFDB86269C1502004DA6A9 /* Date+Add.swift in Sources */,
 				B6E08CDF2701B28C001CA19A /* Dictionary+Add.swift in Sources */,
 				B661B5EB2711A0DE002F3DAB /* Command.swift in Sources */,
@@ -636,7 +641,6 @@
 				B62D20E32719648300C346FB /* VideoLoopView.swift in Sources */,
 				B6D5079E272AD69200DE90BE /* ConstraintMakerRelatable+Add.swift in Sources */,
 				B62E962A26D4D4DD00D3AC8F /* LayerView.swift in Sources */,
-				B62D20DE2719638600C346FB /* LayoutView.swift in Sources */,
 				B6F05DC826B8E0F200B20796 /* Array+Add.swift in Sources */,
 				B610EA5A269EB14F00D91E7D /* UIColor+Add.swift in Sources */,
 				B62E961926D4D25300D3AC8F /* CAAnimation+Add.swift in Sources */,
@@ -656,11 +660,13 @@
 				B6E08CE32701B291001CA19A /* Sequence+Add.swift in Sources */,
 				B610EA61269EB14F00D91E7D /* ObjectUnicode.swift in Sources */,
 				B62E962426D4D45400D3AC8F /* WaterflowLayout.swift in Sources */,
+				B6D507A5272B981A00DE90BE /* Protocol.swift in Sources */,
 				B62E961C26D4D2FD00D3AC8F /* UINavigationController+Add.swift in Sources */,
 				B66B2E0526ECC66800D77B60 /* PageControl.swift in Sources */,
 				B62E960D26D4D0FC00D3AC8F /* HUD.swift in Sources */,
 				B610EA62269EB14F00D91E7D /* BaseView.swift in Sources */,
 				B610EA63269EB14F00D91E7D /* ProfileViewController.swift in Sources */,
+				B6D507A8272B983B00DE90BE /* Libs.swift in Sources */,
 				B610EA64269EB14F00D91E7D /* Date+Add.swift in Sources */,
 				B6E08CE02701B28C001CA19A /* Dictionary+Add.swift in Sources */,
 				B661B5EC2711A0DE002F3DAB /* Command.swift in Sources */,
