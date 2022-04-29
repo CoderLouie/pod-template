@@ -10,7 +10,7 @@
 
 #import <sys/time.h>
  
-void OCBenchmark(void (^block)(void), void (^complete)(double ms)) {
+double OCBenchmark(void (^block)(void)) {
     // <sys/time.h> version
     
 #if DEVELOPMENT
@@ -23,8 +23,7 @@ void OCBenchmark(void (^block)(void), void (^complete)(double ms)) {
     gettimeofday(&t0, NULL);
     block();
     gettimeofday(&t1, NULL);
-    double ms = (double)(t1.tv_sec - t0.tv_sec) * 1e3 + (double)(t1.tv_usec - t0.tv_usec) * 1e-3;
-    complete(ms);
+    return (double)(t1.tv_sec - t0.tv_sec) * 1e3 + (double)(t1.tv_usec - t0.tv_usec) * 1e-3;
 }
 
 #import "OC_Call_Swift.h"

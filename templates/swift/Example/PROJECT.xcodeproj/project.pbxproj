@@ -38,8 +38,8 @@
 		B610EA69269EB14F00D91E7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CFDBAB269C1FC0004DA6A9 /* Localizable.strings */; };
 		B610EA6A269EB14F00D91E7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CFDBA7269C1FB2004DA6A9 /* InfoPlist.strings */; };
 		B610EA6B269EB14F00D91E7D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		B610EA72269EB21300D91E7D /* Info_dis.plist in Resources */ = {isa = PBXBuildFile; fileRef = B610EA71269EB21300D91E7D /* Info_dis.plist */; };
-		B610EA73269EB21C00D91E7D /* Info_dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD41AFB9204008FA782 /* Info_dev.plist */; };
+		B610EA72269EB21300D91E7D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B610EA71269EB21300D91E7D /* Info.plist */; };
+		B610EA73269EB21C00D91E7D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD41AFB9204008FA782 /* Info.plist */; };
 		B610EB14269EBA3600D91E7D /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610EB13269EBA3600D91E7D /* Car.swift */; };
 		B610EB15269EBA3600D91E7D /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610EB13269EBA3600D91E7D /* Car.swift */; };
 		B62B9C4F2698A2C0000A3609 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62B9C4E2698A2C0000A3609 /* Launch Screen.storyboard */; };
@@ -123,7 +123,7 @@
 
 /* Begin PBXFileReference section */
 		607FACD01AFB9204008FA782 /* PROJECT_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PROJECT_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info_dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info_dev.plist; sourceTree = "<group>"; };
+		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		B610EA4A269E8AC600D91E7D /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		B610EA4B269E8AC600D91E7D /* Constant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
 		B610EA6F269EB14F00D91E7D /* PROJECT_dis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PROJECT_dis.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B610EA71269EB21300D91E7D /* Info_dis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_dis.plist; sourceTree = "<group>"; };
+		B610EA71269EB21300D91E7D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B610EB13269EBA3600D91E7D /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		B610EB16269EBBC900D91E7D /* OC_Call_Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OC_Call_Swift.h; sourceTree = "<group>"; };
 		B62B9C4E2698A2C0000A3609 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -236,11 +236,27 @@
 			path = PROJECT;
 			sourceTree = "<group>";
 		};
+		B606186F27574D5D006D475B /* Dev */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD41AFB9204008FA782 /* Info.plist */,
+			);
+			path = Dev;
+			sourceTree = "<group>";
+		};
+		B606187027574D65006D475B /* Dis */ = {
+			isa = PBXGroup;
+			children = (
+				B610EA71269EB21300D91E7D /* Info.plist */,
+			);
+			path = Dis;
+			sourceTree = "<group>";
+		};
 		B62B9C482698A1C1000A3609 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				B610EA71269EB21300D91E7D /* Info_dis.plist */,
-				607FACD41AFB9204008FA782 /* Info_dev.plist */,
+				B606187027574D65006D475B /* Dis */,
+				B606186F27574D5D006D475B /* Dev */,
 				B6CFDB88269C155D004DA6A9 /* PROJECT-Bridging-Header.h */,
 				B610EB16269EBBC900D91E7D /* OC_Call_Swift.h */,
 			);
@@ -537,7 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B62B9C4F2698A2C0000A3609 /* Launch Screen.storyboard in Resources */,
-				B610EA73269EB21C00D91E7D /* Info_dev.plist in Resources */,
+				B610EA73269EB21C00D91E7D /* Info.plist in Resources */,
 				B6CFDBA9269C1FC0004DA6A9 /* Localizable.strings in Resources */,
 				B6CFDBA5269C1FB2004DA6A9 /* InfoPlist.strings in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -550,7 +566,7 @@
 			files = (
 				B610EA68269EB14F00D91E7D /* Launch Screen.storyboard in Resources */,
 				B610EA69269EB14F00D91E7D /* Localizable.strings in Resources */,
-				B610EA72269EB21300D91E7D /* Info_dis.plist in Resources */,
+				B610EA72269EB21300D91E7D /* Info.plist in Resources */,
 				B610EA6A269EB14F00D91E7D /* InfoPlist.strings in Resources */,
 				B610EA6B269EB14F00D91E7D /* Images.xcassets in Resources */,
 			);
@@ -811,7 +827,7 @@
 					"$(inherited)",
 					"DEVELOPMENT=1",
 				);
-				INFOPLIST_FILE = PROJECT/Other/Info_dev.plist;
+				INFOPLIST_FILE = PROJECT/Other/Dev/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -836,7 +852,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = NW3KV7KHV6;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEVELOPMENT=1";
-				INFOPLIST_FILE = PROJECT/Other/Info_dev.plist;
+				INFOPLIST_FILE = PROJECT/Other/Dev/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -858,7 +874,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = NW3KV7KHV6;
-				INFOPLIST_FILE = PROJECT/Other/Info_dis.plist;
+				INFOPLIST_FILE = PROJECT/Other/Dis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -881,7 +897,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = NW3KV7KHV6;
-				INFOPLIST_FILE = PROJECT/Other/Info_dis.plist;
+				INFOPLIST_FILE = PROJECT/Other/Dis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
